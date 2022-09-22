@@ -1,12 +1,10 @@
 [TOC]
 
-# Describe the Concepts of Security, Compliance, and Identity (5-10%)
+
+# Describe security and compliance concepts
 
 
-## Describe security and compliance concepts
-
-
-### Shared responsibility model
+## Describe Shared responsibility model
 
 [Describe the shared responsibility model - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-security-concepts-methodologies/3-describe-shared-responsibility-model)
 
@@ -43,7 +41,7 @@ The importance of understanding this shared responsibility model is essential fo
 [Whitepaper](https://azure.microsoft.com/en-us/resources/shared-responsibility-for-cloud-computing/)
 
 
-### Defence in Depth
+## Describe Defence in Depth
 
 [Describe defense in depth - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-security-concepts-methodologies/4-describe-defense-depth)
 
@@ -70,7 +68,7 @@ Additional material
 [Azure Essentials: Defense in depth security - YouTube](https://www.youtube.com/watch?v=OTGMi0ksjXY)
 
 
-### Zero-Trust Methodology
+## Describe Zero-Trust Methodology
 
 [Describe the zero-trust methodology - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-security-concepts-methodologies/2-describe-zero-trust-methodology)
 
@@ -107,51 +105,7 @@ These six pillars work together with the Zero Trust model to enforce organisatio
 
 ![Confidentiality, Integrity, Availability (CIA)](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-security-concepts-methodologies/media/4-confidentiality-integrity-availability.png)
 
-
-
-## <u>Common Threats</u>
-
-[Describe common threats - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-security-concepts-methodologies/5-describe-common-threats)
-
-- **Data breach**
-  
-  - When some data is stolen, which involves personal data (data/information which can relate to identify an individual directly or indirectly)
-- **Dictionary attack**
-  - Type of an identity attack where a hacker attempts to steal an identity by trying a large number of known passwords.
-  - *Passwords are tried against a known username.*
-  - This attacks are also known as **Brute Force Attacks**.
-- **Ransomware**
-  - Type of a malware that encrypts files and folders, preventing access to important files.
-  - These attacks attempts to extort money from victims, usually in the form of cryptocurrencies, in the exchange of decryption key.
-- **Disruptive attacks**
-  - A **D**istributed **D**enial **o**f **S**ervice (DDoS) attack attempts to exhaust an application's resources, making the application unavailable to legitimate users.
-  - These types of attacks can be targeted at any endpoints which are publicly reachable through Internet.
-
-- **Other types**
-
-  - Coin Miners
-
-  - Rootkits
-
-    - These attacks intercept and change standard Operating System processes.
-    - Once a device is infected with these type of an attack, reports coming from the devices can not be trusted.
-
-  - Trojans
-
-    - Type of malware, which can not spread on their own.
-    - Either they have to be downloaded manually or another malware needs to download and install them.
-    - Trojan uses the same file name as real and legitimate apps, so it's easy for a user to accidentally download instead.
-
-  -  Worms
-
-    - Type of malware, which can copy itself and spread through a network by exploiting vulnerabilities.
-    - Usually spreads through e-mail attachment, text messages, file sharing programs, social networking sites, network shares, removable drive etc.
-
-  - Exploits and Exploit Kits.
-
-    
-
-## Encryption and Hashing
+## Describe Encryption and Hashing
 
 [Describe ways encryption hashing and signing can secure your data - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-security-concepts-methodologies/6-describe-ways-encryption-hashing-signing-secure-data)
 
@@ -165,7 +119,7 @@ Encryption can protect data at rest or in transit.
 
   - Uses the same key to encrypt and decrypt the data.
 
-- #### Asymmetric
+-  Asymmetric
 
   - Uses public key and private key pair, either key can encrypt data but a single key can't be used to decrypt encrypted data.
   - Usually used for things like Transport Layer Security (TLS), HTTPS protocol and data signing.
@@ -253,3 +207,161 @@ At the receiving end, the message is hashed again, and verified against the digi
 [Azure compliance documentation | Microsoft Docs](https://docs.microsoft.com/en-us/azure/compliance/)
 
 ![Azure compliance documentation](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-microsoft-security-compliance-principles/media/4-azure-compliance-documentation.png)
+
+
+## <u>Common Threats</u>
+
+[Describe common threats - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-security-concepts-methodologies/5-describe-common-threats)
+
+- **Data breach**
+  
+  - When some data is stolen, which involves personal data (data/information which can relate to identify an individual directly or indirectly)
+- **Dictionary attack**
+  - Type of an identity attack where a hacker attempts to steal an identity by trying a large number of known passwords.
+  - *Passwords are tried against a known username.*
+  - This attacks are also known as **Brute Force Attacks**.
+- **Ransomware**
+  - Type of a malware that encrypts files and folders, preventing access to important files.
+  - These attacks attempts to extort money from victims, usually in the form of cryptocurrencies, in the exchange of decryption key.
+- **Disruptive attacks**
+  - A **D**istributed **D**enial **o**f **S**ervice (DDoS) attack attempts to exhaust an application's resources, making the application unavailable to legitimate users.
+  - These types of attacks can be targeted at any endpoints which are publicly reachable through Internet.
+
+- **Other types**
+
+  - Coin Miners
+
+  - Rootkits
+
+    - These attacks intercept and change standard Operating System processes.
+    - Once a device is infected with these type of an attack, reports coming from the devices can not be trusted.
+
+  - Trojans
+
+    - Type of malware, which can not spread on their own.
+    - Either they have to be downloaded manually or another malware needs to download and install them.
+    - Trojan uses the same file name as real and legitimate apps, so it's easy for a user to accidentally download instead.
+
+  -  Worms
+
+    - Type of malware, which can copy itself and spread through a network by exploiting vulnerabilities.
+    - Usually spreads through e-mail attachment, text messages, file sharing programs, social networking sites, network shares, removable drive etc.
+
+  - Exploits and Exploit Kits.
+
+    
+# Define identity concepts
+
+## Identity as the primary security perimeter
+
+[Define Identity as the primary security perimeter - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-identity-principles-concepts/3-define-identity-primary-security-perimeter)
+
+- The traditional perimeter based security model is no longer enough. Identity has become the new security perimeter that enables organisations to secure their assets.
+- Enterprise security needs to adapt new reality, security perimeter can no longer be viewed as on-premises network, it now extends to,
+  - SaaS app for business critical work may be hosted outside the corporate network.
+  - BYOD devices that employees are using to access corporate network while working from home.
+  - Unmanaged device that a customer or partner is using to access corporate data or collaborating with employees.
+  - IoT devices installed throughout your corporate network and inside customer locations.
+
+![Identity is the new security perimeter](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-identity-principles-concepts/media/3-identity-new-security-perimeter.png)
+
+### Four Pillars of Identity
+
+Addressing following four pillars is key to a comprehensive and robust identity and access control situation.
+
+1. Administration
+2. Authentication
+3. Authorisation
+4. Auditing
+
+
+### Common Identity Attacks
+
+[Describe common identity attacks - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-identity-principles-concepts/2-describe-common-identity-attacks)
+
+- Some of the most common types of security threats that organisation face today.
+
+- Design to steal credentials to authenticate that someone or something is who they are claiming to be, resulting in Identity Theft.
+
+- To protect against such Identity attacks, robust security and monitoring is needed. ***Risk detections in Azure AD Identity Protection include identified suspicious actions related to user accounts.***
+
+- There are **two types of Risk,**
+
+  - **User Risk**
+    - Represent the probability that a given identity or account is compromised.
+  - **Sign-in Risk**
+    - Represent the probability that a given authentication request is not authorised by the identity owner.
+
+  #### Password-based Attacks
+
+  ![Password spray attack](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-identity-principles-concepts/media/2-password-spray-attack.png)
+
+  - This includes Password spray attacks and Brute force attacks.
+    - ***Password Spray Attack***, this attack attempts to match a username against a list of weak passwords
+    - ***Brute Force Attack***, this attack try many passwords against one or more accounts, sometimes using dictionaries of commonly used passwords. 
+
+  #### Phishing Attack
+
+  - A phishing attack is when a hacker sends an email that appears to come from a reputable source. 
+
+  #### Spear Phishing Attack
+
+  - A spear phishing scam is a variant on Phishing. Hackers build databases of information about users, which can be used to create highly credible emails. The email may appear to have come from someone in your organisation who is requesting information. 
+
+## Define Authentication (AuthN)
+
+Identity authentication determines if the person is who they say they are. Authentication relies on additional data that is difficult to produce, except by that specific person.
+
+[What is Authentication - YouTube](https://www.youtube.com/watch?v=927KdwZZoU0)
+
+[Identity Authentication – Are They Who They Say They Are? (trulioo.com)](https://www.trulioo.com/blog/identity-authentication)
+
+## Define Authorisation (AuthZ)
+
+Authorization is the process of giving someone the ability to access a resource.
+
+[What is Authorization? - Examples and definition - Auth0](https://auth0.com/intro-to-iam/what-is-authorization/)
+
+
+
+### Modern Authentication
+
+[Describe modern authentication and the role of the identity provider - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-identity-principles-concepts/4-describe-modern-authentication-role-identity-provider)
+
+- Morden authentication is an umbrella term for AuthN and AuthZ methods between a client, such as your laptop or phone, and a server, like a website or application.
+
+  
+
+## Describe Identity Providers (IdP) 
+
+[Describe modern authentication and the role of the identity provider - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-identity-principles-concepts/4-describe-modern-authentication-role-identity-provider)
+
+- Identity Provider (IdP) is the role at the centre of modern authentication.
+
+- All services including all AuthN services are supplied by a central Identity Provider. Information that is used to authenticate the user with the server is stored and managed centrally by the Identity Provider (IdP).
+
+- With a central identity provider, organizations can establish authentication and authorization policies, monitor user behaviour, identify suspicious activities, and reduce malicious attacks.
+
+- Microsoft Azure Active Directory is an example of a cloud-based identity provider. Other examples include Twitter, Google, Amazon, LinkedIn, and GitHub.
+
+- Another fundamental capability of an identity provider (IdP) and “modern authentication” is the support for single sign-on (SSO). With SSO, the user logs in once and that credential is used to access multiple applications or resources. When you set up SSO between multiple identity providers, it's called federation.
+
+  
+
+## Describe Federated Services
+
+[Describe the concept of Federated Services - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-identity-principles-concepts/5-describe-concept-federated-services)
+
+- Federation enables the access of services across organizational or domain boundaries by establishing trust relationships between the respective domain’s identity provider. With federation, there's no need for a user to maintain a different username and password when accessing resources in other domains.
+
+![Simplifed view of how federation works](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-identity-principles-concepts/media/5-federated-identification.png)
+
+- The simplified way to think about this federation scenario is as follows:
+  - The website uses the authentication services of IdP-A.
+  - The user authenticates with IdP-B.
+  - IdP-A has a trust relationship configured with IdP-B.
+  - When the user’s credentials are passed to the website, the website trusts the user and allows access.
+- **With federation, trust isn't always bidirectional. Although IdP-A may trust IdP-B and allow the user in domain B to access the website in domain A, the opposite isn't true, unless that trust relationship is configured.**
+- A common example of federation in practice is when a user logs in to a third-party site with their social media account, such as Twitter. In this scenario, Twitter is an identity provider, and the third-party site might be using a different identity provider, such as Azure AD. There's a trust relationship between Azure AD and Twitter.
+
+
