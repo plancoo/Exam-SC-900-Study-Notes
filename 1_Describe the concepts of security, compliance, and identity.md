@@ -3,7 +3,72 @@
 # Describe the Concepts of Security, Compliance, and Identity (5-10%)
 
 
-## <u>Security Methodologies</u>
+## Describe security and compliance concepts
+
+
+### Shared responsibility model
+
+[Describe the shared responsibility model - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-security-concepts-methodologies/3-describe-shared-responsibility-model)
+
+This model identifies which security tasks are handled by the cloud provider, and which are handled by customers. 
+
+- On-premises - Organisation own 100% of responsibilities for Security and Compliance
+- Cloud-based - Shared between customer and the cloud provider.
+
+![The Shared responsibility model responsibilities by type](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-security-concepts-methodologies/media/3-shared-responsibility-model-responsibilites-type.png)
+
+**Customer**,
+
+- Owns **data and identities**.
+- Is responsible for protecting the security of **data and identities**.
+
+
+**Summary**
+
+Responsibility is always retained by the customer organisation include,
+
+- Information and Data
+- Devices (Mobile and PCs)
+- Accounts and Identities 
+
+*In a shared responsibility model*, a layered approach to security is illustrated as: 
+
+- For **on-premises solutions**, the customer is both accountable and responsible for all  aspects of security and operations.
+- For **IaaS solutions**, the elements such as buildings, servers, networking hardware, and the  hypervisor should be managed by the platform vendor. The customer is responsible or  has a shared responsibility for securing and managing the operating system, network  configuration, applications, identity, clients, and data.
+- For **PaaS solutions** build on IaaS deployments, and the provider is additionally responsible to  manage and secure the network controls. The customer is still responsible or has a  shared responsibility for securing and managing applications, identity, clients, and data.  
+- For **SaaS solutions**, a vendor provides the application and abstracts customers from the  underlying components. Nonetheless, the customer continues to be accountable; they  must ensure that data is classified correctly, and they share a responsibility to manage  their users and end-point devices.   
+
+The importance of understanding this shared responsibility model is essential for customers who  are moving to the cloud. **Cloud providers offer considerable advantages for security and  compliance efforts, but these advantages do not absolve the customer from protecting their  users, applications, and service offerings.** 
+
+[Whitepaper](https://azure.microsoft.com/en-us/resources/shared-responsibility-for-cloud-computing/)
+
+
+### Defence in Depth
+
+[Describe defense in depth - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-security-concepts-methodologies/4-describe-defense-depth)
+
+Defence in depth uses a layered approach to security, rather than relying on a single perimeter. 
+
+A defence in-depth strategy uses a series of mechanisms to slow the advance of an attack. Each layer provides protection so that, if one layer is breached, a subsequent layer will prevent an attacker getting unauthorized access to data.
+
+Example layers of security might include:
+
+- **Physical** security such as limiting access to a datacentre to only authorized personnel.
+- **Identity and access** security controlling access to infrastructure and change control.
+- **Perimeter** security including distributed denial of service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for users.
+- **Network** security can limit communication between resources using segmentation and access controls.
+- The **compute** layer can secure access to virtual machines either on-premises or in the cloud by closing certain ports.
+- **Application** layer security ensures that applications are secure and free of security vulnerabilities.
+- **Data** layer security controls access to business and customer data, and encryption to protect data.
+
+![Defense in depth uses multiple layers of security to protect sensitive data](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-security-concepts-methodologies/media/4-defense-depth.png)
+
+Additional material 
+
+[What is Defense in Depth | Benefits of Layered Security | Imperva](https://www.imperva.com/learn/application-security/defense-in-depth/)
+
+[Azure Essentials: Defense in depth security - YouTube](https://www.youtube.com/watch?v=OTGMi0ksjXY)
+
 
 ### Zero-Trust Methodology
 
@@ -34,74 +99,6 @@ These six pillars work together with the Zero Trust model to enforce organisatio
 - **Data**
 - **Infrastructure**
 - **Networks**
-
-
-
-### Shared responsibility model
-
-[Describe the shared responsibility model - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-security-concepts-methodologies/3-describe-shared-responsibility-model)
-
-This model identifies which security tasks are handled by the cloud provider, and which are handled by customers. 
-
-- On-premises - Organisation own 100% of responsibilities for Security and Compliance
-- Cloud-based - Shared between customer and the cloud provider.
-
-![The Shared responsibility model responsibilities by type](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-security-concepts-methodologies/media/3-shared-responsibility-model-responsibilites-type.png)
-
-**Customer**,
-
-- Owns **data and identities**.
-- Is responsible for protecting the security of **data and identities**.
-
-
-
-**Summary**
-
-Responsibility is always retained by the customer organisation include,
-
-- Information and Data
-- Devices (Mobile and PCs)
-- Accounts and Identities 
-
-*In a shared responsibility model*, a layered approach to security is illustrated as: 
-
-- For **on-premises solutions**, the customer is both accountable and responsible for all  aspects of security and operations.
-- For **IaaS solutions**, the elements such as buildings, servers, networking hardware, and the  hypervisor should be managed by the platform vendor. The customer is responsible or  has a shared responsibility for securing and managing the operating system, network  configuration, applications, identity, clients, and data.
-- For **PaaS solutions** build on IaaS deployments, and the provider is additionally responsible to  manage and secure the network controls. The customer is still responsible or has a  shared responsibility for securing and managing applications, identity, clients, and data.  
-- For **SaaS solutions**, a vendor provides the application and abstracts customers from the  underlying components. Nonetheless, the customer continues to be accountable; they  must ensure that data is classified correctly, and they share a responsibility to manage  their users and end-point devices.   
-
-The importance of understanding this shared responsibility model is essential for customers who  are moving to the cloud. **Cloud providers offer considerable advantages for security and  compliance efforts, but these advantages do not absolve the customer from protecting their  users, applications, and service offerings.** 
-
-[Whitepaper](https://azure.microsoft.com/en-us/resources/shared-responsibility-for-cloud-computing/)
-
-
-
-#### Defence in Depth
-
-[Describe defense in depth - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-security-concepts-methodologies/4-describe-defense-depth)
-
-Defence in depth uses a layered approach to security, rather than relying on a single perimeter. 
-
-A defence in-depth strategy uses a series of mechanisms to slow the advance of an attack. Each layer provides protection so that, if one layer is breached, a subsequent layer will prevent an attacker getting unauthorized access to data.
-
-Example layers of security might include:
-
-- **Physical** security such as limiting access to a datacentre to only authorized personnel.
-- **Identity and access** security controlling access to infrastructure and change control.
-- **Perimeter** security including distributed denial of service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for users.
-- **Network** security can limit communication between resources using segmentation and access controls.
-- The **compute** layer can secure access to virtual machines either on-premises or in the cloud by closing certain ports.
-- **Application** layer security ensures that applications are secure and free of security vulnerabilities.
-- **Data** layer security controls access to business and customer data, and encryption to protect data.
-
-![Defense in depth uses multiple layers of security to protect sensitive data](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-security-concepts-methodologies/media/4-defense-depth.png)
-
-Additional material 
-
-[What is Defense in Depth | Benefits of Layered Security | Imperva](https://www.imperva.com/learn/application-security/defense-in-depth/)
-
-[Azure Essentials: Defense in depth security - YouTube](https://www.youtube.com/watch?v=OTGMi0ksjXY)
-
 
 
 #### Confidentiality, Integrity, Availability (CIA)
@@ -154,7 +151,7 @@ Additional material
 
     
 
-## Encryption
+## Encryption and Hashing
 
 [Describe ways encryption hashing and signing can secure your data - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-security-concepts-methodologies/6-describe-ways-encryption-hashing-signing-secure-data)
 
