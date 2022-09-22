@@ -1,1 +1,1 @@
-# EMicrosoft Security, Compliance, and Identity Fundamentals (SC-900) Notes
+# Microsoft Security, Compliance, and Identity Fundamentals (SC-900) Notes
