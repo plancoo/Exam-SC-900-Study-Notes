@@ -1,6 +1,6 @@
 # Microsoft Security, Compliance, and Identity Fundamentals (SC-900) Notes
 
-# My Notes
+## My Notes
 
 This document was created when I was preparing for this exam . 
 
@@ -176,3 +176,48 @@ Protection)**
 · define Azure Policy and describe its use cases
 · describe cloud adoption framework
 ```
+
+## Resources Links:
+Azure Security Benchmark<BR />
+https://docs.microsoft.com/en-us/security/benchmark/azure/ <BR />
+Azure Security Benchmark 3.0<BR />
+https://github.com/MicrosoftDocs/SecurityBenchmarks/tree/master/Azure%20Security%20Benchmark/3.0 <BR />
+
+### Github Microsoft Learning SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals
+https://github.com/MicrosoftLearning/SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals<BR />
+<BR />
+
+### FreeCodeCamp.org - Microsoft Security Compliance and Identity (SC-900) - Full Course PASS the Exam
+https://www.youtube.com/watch?v=LLKza5oULAA
+
+### SC-900 Microsoft Security, Compliance and Identity Exam Cram (Full Course)
+https://www.youtube.com/watch?v=rDxtTM7cOPI
+
+## Microsoft Security Compliance and Identity (SC-900) - Full Course PASS the Exam
+https://www.youtube.com/watch?v=Bz-8jM3jg-8
+
+### Microsoft Learning Path Training 
+Microsoft Security, Compliance, and Identity Fundamentals: Describe the concepts of security, compliance, and identity - https://docs.microsoft.com/en-us/learn/paths/describe-concepts-of-security-compliance-identity/<BR />
+<BR />
+
+Detect and respond to cyber attacks with Microsoft Defender - https://docs.microsoft.com/en-us/learn/paths/defender-endpoint-fundamentals/<BR />
+<BR />
+
+Microsoft 365 Fundamentals: Demonstrate fundamental knowledge of Microsoft 365 security and compliance capabilities - 
+https://docs.microsoft.com/en-us/learn/paths/m365-security-compliance-capabilities/<BR />
+<BR />
+Describe concepts of cryptography - https://docs.microsoft.com/en-us/learn/modules/describe-concepts-of-cryptography/<BR />
+<BR />
+
+## Azure Secure Score vs. Microsoft SecureScore - by Bojan Magusic
+https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/azure-secure-score-vs-microsoft-secure-score/ba-p/2459684<BR />
+<BR />
+
+## Microsoft Tech Community: Security Compliance and Identity
+https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/MicrosoftSecurityandCompliance<BR />
+<BR />
+
+
+
+
+
