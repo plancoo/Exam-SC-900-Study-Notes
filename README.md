@@ -1,1 +1,1 @@
-# Exam-SC-900-Study-Notes
+# EMicrosoft Security, Compliance, and Identity Fundamentals (SC-900) Notes
