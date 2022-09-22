@@ -1,7 +1,7 @@
 # Microsoft Security, Compliance, and Identity Fundamentals (SC-900) Notes
 
 # My Notes
-```
+
 This document was created when I was preparing for this exam . 
 
 
