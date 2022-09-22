@@ -349,8 +349,7 @@ Although password protection improves the strength of passwords, you should stil
 
 
 
-## Access Management capabilities of Azure AD
-
+## 3_Describe access management capabilities of Azure AD
 
 
 ### Conditional Access and its benefits
@@ -456,7 +455,7 @@ It's best practice, and more secure, to grant users the least privilege to get t
 
 
 
-## Identity Protection and Governance capabilities of Azure AD
+## 4_Describe the identity protection & governance capabilities of Azure AD
 
 
 
