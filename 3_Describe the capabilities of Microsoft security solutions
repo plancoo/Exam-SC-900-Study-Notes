@@ -1,0 +1,190 @@
+### Describe Azure Network Security groups
+
+- Network security groups: source, source port, destination, destination port, and protocol to either allow or deny the traffic
+- Priority: 100 to 4096. 100 is highest priority
+
+### Describe Azure DDoS protection
+
+- Distributed Denial of Service attacks: Volumetric attacks, Protocol attacks, Resource (application) layer attacks
+- Azure DDoS Protection comes in two tiers:
+    - Basic: automatically enabled for every property in Azure, at no extra cost
+    - Standard: provides extra mitigation capabilities that are tuned specifically to Microsoft Azure Virtual Network resources. Charged monthly for 100 resources
+
+### Describe what is Azure Firewall
+
+- Built-in high availability and availability zones
+- Network and application level filtering
+- Outbound SNAT and inbound DNAT to communicate with internet resources
+- Multiple public IP addresses
+- Threat intelligence
+- Integration with Azure Monitor
+
+### Describe what is Azure Bastion
+
+- PaaS solution
+- Azure Bastion provides secure and seamless RDP/SSH connectivity to your virtual machines directly from the Azure portal using Transport Layer Security (TLS)
+- deployment is per virtual network and not per subscription/account or VM
+- Features:
+- RDP and SSH directly in Azure portal
+    - Remote session over TLS and firewall traversal for RDP/SSH
+    - No Public IP required on the Azure VM
+    - No hassle of managing NSGs
+    - Protection against port scanning
+    - Protect against zero-day exploits
+
+### Describe what is Web Application Firewall
+
+- WAF can be deployed with Azure Application Gateway, Azure Front Door, and Azure Content Delivery Network (CDN) services from Microsoft.
+
+### Describe ways Azure encrypts data
+
+- Encryption on Azure:
+    - Azure Storage Service Encryption: data at rest
+    - Azure Disk Encryption: encrypt Windows and Linux IaaS virtual machine disks (BitLocker feature of Windows and the dm-crypt feature of Linux)
+    - Transparent data encryption (TDE): performs real-time encryption and decryption of the database, backups and logs
+- What is Azure Key Vault: centralized cloud service for storing your application secrets
+    - Secrets management: control access to tokens, passwords, certificates, Application Programming Interface (API) keys, and other secrets
+    - Key management: reate and control the encryption keys used to encrypt your data.
+    - Certificate management: provision, manage, and deploy your public and private Secure Sockets Layer/ Transport Layer Security (SSL/ TLS) certificates
+    - Store secrets backed by hardware security modules (HSMs): The secrets and keys can be protected either by software or by FIPS 140-2 Level 2 validated HSMs.
+
+### Describe Cloud security posture management
+
+- CSPM uses a combination of tools and services:
+    - Zero Trust-based access control
+    - Real-time risk scoring
+    - Threat and vulnerability management (TVM)
+    - Discover sharing risks
+    - Technical policy
+    - Threat modeling systems and architectures
+
+### Describe and explore the Azure Security center
+
+- Strengthen your security posture
+    - Continuous assessment
+    - Network map
+- Protect against threats
+    - Integration with Microsoft Defender
+    - Protect PaaS
+    - Block brute force attacks
+    - Protect data services
+- Get secure faster
+
+### Describe and explore Azure Secure score
+
+- Security Center continually assesses your resourc-es, subscriptions, and organization for security issues. It then aggregates all the findings into a single score
+
+### Describe the benefit and use cases of Azure Defender
+
+- Azure Defender is the leading Microsoft extended detection and response (XDR) solution for threat protection
+- Available plans for Azure Defender
+    - Azure Defender for servers
+    - Azure Defender for App Service
+    - Azure Defender for Storage
+    - Azure Defender for SQL
+    - Azure Defender for Kubernetes
+    - Azure Defender for container registries
+    - Azure Defender for Key Vault
+- Hybrid cloud protection
+- Azure Defender alerts
+- Advanced protection
+- Vulnerability assessment
+
+### Describe security baselines for Azure
+
+- The Azure Security Benchmark (ASB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure.
+
+### Describe the different pricing tiers
+
+- Security Center without Azure Defender is enabled free of charge on all your Azure subscriptions
+- Enabling Azure Defender extends the free mode capabilities to workloads running in private and other public clouds, providing unified security management and threat protection across your hybrid cloud workloads.
+
+### Define the concepts of SIEM, SOAR, XDR
+
+- SIEM: A SIEM system is a tool that an organization uses to collect data from across the whole estate, including infrastructure, software, and resources. It does analysis, looks for correlations or anomalies, and generates alerts and incidents.
+- SOAR: A SOAR system takes alerts from many sources, such as a SIEM system. The SOAR system then triggers action-driven automated workflows and processes to run security tasks that mitigate the issue.
+- XDR: An XDR system is designed to deliver intelligent, automated, and integrated security across an organization’s domain. It helps prevent, detect, and respond to threats across identities, endpoints, applications, email, IoT, infrastructure, and cloud platforms.
+
+### Describe how Sentinel provides integrated threat protection
+
+- Microsoft Azure Sentinel is a scalable, cloud-native SIEM/SOAR solution that delivers intelligent security analytics and threat intelligence across the enterprise. It provides a single solution for alert detection, threat visibility, proactive hunting, and threat response.
+- Functionality: Collect > Detect > Investigate > Respond
+- Data connectors available to be connected:
+    - syslog
+    - Windows Event Logs
+    - Common Event Format (CEF)
+    - Trusted Automated eXchange of Indicator Information (TAXII), for threat intelligence
+    - Azure
+    - AWS services
+- Costs:
+    - Capacity Reservations: With Capacity Reservations, you're billed a fixed fee based on the selected tier, enabling a predictable total cost for Azure Sentinel.
+    - Pay-As-You-Go: With Pay-As-You-Go pricing, you're billed per gigabyte (GB) for the volume of data ingested for analysis in Azure Sentinel and stored in the Azure Monitor Log Analytics workspace.
+
+### Describe Microsoft 365 Defender services
+
+- Microsoft 365 Defender allows admins to assess threat signals from applications, email, and identity to determine an attack's scope and impact.
+
+### Describe Microsoft Defender for Identity
+
+- cloud-based security solution. It uses your on-premises Active Directory data (called signals) to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
+- Monitor and profile user behavior and activities
+- Protect user identities and reduce the attack surface
+- Identify suspicious activities and advanced attacks across the cyberattack kill-chain
+
+### Describe Microsoft Defender for Office 365
+
+- safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools, including Microsoft Teams, SharePoint Online, OneDrive for Business, and other Office clients.
+- Available in 2 Plans:
+    - Plan1: Safe Attachments, Safe Links, Protection for SharePoint, OneDrive, and Microsoft Teams, Anti-phishing protection, Real-time detections
+    - Plan 2: Plan1, Threat Trackers, Threat Explorer, Automated investigation and response (AIR), Attack Simulator
+- Microsoft Defender for Office 365 is included in certain subscriptions, such as Microsoft 365 E5, Office 365 E5, Office 365 A5, and Microsoft 365 Business Premium.
+
+### Describe Microsoft Defender for Endpoint
+
+- platform designed to help enterprise networks protect endpoints.
+
+### Describe Microsoft Cloud App Security
+
+- Microsoft Cloud App Security (MCAS) is a Cloud Access Security Broker (CASB). It's a comprehensive cross-SaaS solution that operates as an intermediary between a cloud user and the cloud provider.
+- Office 365 Cloud App Security: subset of MCAS
+- When using Cloud App Security, consideration must be given to the architecture of the entire estate.
+
+### Describe and explore the Microsoft 365 security center
+
+- The Microsoft 365 security center is the new home for monitoring and managing security across your Microsoft identities, data, devices, and apps.
+- Here you can view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity.
+- You must be assigned an appropriate role, such as Global Administrator, Security Administrator, Security Operator, or Security Reader in Azure Active Directory to access the Microsoft 365 security center.
+
+### Describe how to use Microsoft Secure Score
+
+- Microsoft Secure Score, one of the tools in the Microsoft security center, is a representation of a company's security posture. The higher the score, the better your protection.
+
+22.Differences between the Azure and Microsoft Secure Score
+
+- Secure Score in the Azure Security Center is a measure of the security posture of your Azure subscriptions. Secure Score in the Microsoft 365 security center is a measure of the security posture of the organization across your apps, devices, and identities.
+
+### Explore security reports and dashboards
+
+- The Microsoft security center includes a Reports section that shows various cards covering different areas.
+
+### Describe incidents capabilities
+
+- Incident management: In Microsoft 365 Defender, you can manage incidents on devices, users accounts, and mailboxes.
+
+### Describe what is Intune
+
+- Microsoft Intune is a cloud-based service that focuses on mobile device management (MDM) and mobile application management (MAM).
+- Mobile device management (MDM): For devices that are owned by the business, organizations can maintain full control.
+- Mobile application management (MAM): Users with personal devices might not want their phone to be under full corporate control. Mobile application management (MAM) gives admins the ability to protect corporate data at the application level.
+
+### Describe endpoint security with Intune
+
+- Manage devices
+- Manage security baselines: Security baseline settings are used only on devices running Windows 10 version 1809 or later.
+- Use policies to manage device security
+- Use device compliance policy
+- Configure conditional access: Intune + Azure Conditional Access
+- Integration with Microsoft Defender for Endpoint
+- Role-based access control with Microsoft Intune
+
+---
