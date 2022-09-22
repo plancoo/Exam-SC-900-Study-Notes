@@ -2,7 +2,7 @@
 
 
 # Describe security and compliance concepts
-
+ 
 
 ## Describe Shared responsibility model
 
