@@ -178,25 +178,21 @@ Protection)**
 ```
 
 ## Resources Links:
-Azure Security Benchmark<BR />
-https://docs.microsoft.com/en-us/security/benchmark/azure/ <BR />
-Azure Security Benchmark 3.0<BR />
-https://github.com/MicrosoftDocs/SecurityBenchmarks/tree/master/Azure%20Security%20Benchmark/3.0 <BR />
 
-### Github Microsoft Learning SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals
+**Github Microsoft Learning SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals
 https://github.com/MicrosoftLearning/SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals<BR />
 <BR />
 
-### FreeCodeCamp.org - Microsoft Security Compliance and Identity (SC-900) - Full Course PASS the Exam
+**FreeCodeCamp.org - Microsoft Security Compliance and Identity (SC-900) - Full Course PASS the Exam
 https://www.youtube.com/watch?v=LLKza5oULAA
 
-### SC-900 Microsoft Security, Compliance and Identity Exam Cram (Full Course)
+**SC-900 Microsoft Security, Compliance and Identity Exam Cram (Full Course)
 https://www.youtube.com/watch?v=rDxtTM7cOPI
 
-## Microsoft Security Compliance and Identity (SC-900) - Full Course PASS the Exam
+**Microsoft Security Compliance and Identity (SC-900) - Full Course PASS the Exam
 https://www.youtube.com/watch?v=Bz-8jM3jg-8
 
-### Microsoft Learning Path Training 
+**Microsoft Learning Path Training 
 Microsoft Security, Compliance, and Identity Fundamentals: Describe the concepts of security, compliance, and identity - https://docs.microsoft.com/en-us/learn/paths/describe-concepts-of-security-compliance-identity/<BR />
 <BR />
 
@@ -209,13 +205,15 @@ https://docs.microsoft.com/en-us/learn/paths/m365-security-compliance-capabiliti
 Describe concepts of cryptography - https://docs.microsoft.com/en-us/learn/modules/describe-concepts-of-cryptography/<BR />
 <BR />
 
-## Azure Secure Score vs. Microsoft SecureScore - by Bojan Magusic
+**Azure Secure Score vs. Microsoft SecureScore - by Bojan Magusic
 https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/azure-secure-score-vs-microsoft-secure-score/ba-p/2459684<BR />
 <BR />
+**Azure Security Benchmark<BR />
+https://docs.microsoft.com/en-us/security/benchmark/azure/ <BR />
 
-## Microsoft Tech Community: Security Compliance and Identity
-https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/MicrosoftSecurityandCompliance<BR />
-<BR />
+**Azure Security Benchmark 3.0<BR />
+https://github.com/MicrosoftDocs/SecurityBenchmarks/tree/master/Azure%20Security%20Benchmark/3.0 <BR />
+
 
 
 
