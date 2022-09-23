@@ -1,5 +1,3 @@
-[TOC]
-
 
 # Describe security and compliance concepts
  
