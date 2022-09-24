@@ -1,6 +1,3 @@
-# Describe the capabilities of Microsoft compliance solutions (25-30%) 
-
-
 
 ## Describe the compliance management capabilities in Microsoft
 
