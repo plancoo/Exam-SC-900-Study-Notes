@@ -8,25 +8,24 @@ This document was created when I was preparing for this exam .
 
 ## Describe the Concepts of Security, Compliance, and Identity (10·15%)
 
-**Describe security methodologies**
+**Describe security and compliance concepts**
+```
+• Describe the shared responsibility model
+• Define defense in depth
+• Describe the Zero-Trust model
+• Describe encryption and hashing
+• Describe compliance concepts
+```
+**Define identity concepts**
+```
+• Define identity as the primary security perimeter
+• Define authentication
+• Define authorization
+• Describe identity providers
+• Describe Active Directory
+• Describe the concept of Federation
+```
 
-```
-· describe the Zero·Trust methodology
-· describe the shared responsibility model
-· define defense in depth
-```
-**Describe security concepts**
-
-```
-· describe common threats
-· describe encryption
-```
-**Describe Microsoft Security and compliance principles**
-
-```
-· describe Microsoft's privacy principles
-· describe the offerings of the service trust portal
-```
 ## Describe the capabilities of Microsoft Identity and Access Management Solutions (25·30%)
 
 **Define identity principles/concepts**
