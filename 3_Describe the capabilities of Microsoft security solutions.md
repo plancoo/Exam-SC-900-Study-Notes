@@ -1,14 +1,30 @@
-[TOC]
-
-# Describe the capabilities of Microsoft Security Solutions (30-35%) 
 
 
+# Basic security capabilities in Azure
 
-## Basic security capabilities in Azure
+## Describe network segmentation in Azure
 
+Segmentation is about dividing something into smaller pieces. An organization, for example, will typically consist of smaller business groups such as human resources, sales, customer service, and more. In an office environment, it's common to see each business group have their own dedicated office space, while members of the same group share an office. This enables members of the same business group to collaborate, while maintaining separation from other groups to address the confidentiality requirements of each business.
 
+The same concept applies with corporate IT networks. The main reasons for network segmentation are:
 
-### Azure Network Security Groups (NSG)
+   The ability to group related assets that are a part of (or support) workload operations.
+   Isolation of resources.
+   Governance policies set by the organization.
+
+Network segmentation also supports the Zero Trust model and a layered approach to security that is part of a defense in depth strategy.
+
+Assume breach is a principle of the Zero Trust model so the ability to contain an attacker is vital in protecting information systems. When workloads (or parts of a given workload) are placed into separate segments, you can control traffic from/to those segments to secure communication paths. If one segment is compromised, you'll be able to better contain the impact and prevent it from laterally spreading through the rest of your network.
+
+Network segmentation can secure interactions between perimeters. This approach can strengthen an organization's security posture, contain risks in a breach, and stop attackers from gaining access to an entire workload.
+
+### Azure Virtual Network
+
+Azure Virtual Network (VNet) is the fundamental building block for your organization's private network in Azure. VNet is similar to a traditional network that you'd operate in your own data center, but brings with it additional benefits of Azure's infrastructure such as scale, availability, and isolation.
+
+![Dit.](https://learn.microsoft.com/en-us/training/wwl-sci/describe-basic-security-capabilities-azure/media/azure-virtual-networks.png)
+
+## Azure Network Security Groups (NSG)
 
 [Describe Azure Network Security groups - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-basic-security-capabilities-azure/2-describe-azure-network-security-groups)
 
@@ -20,7 +36,7 @@ As a guideline, you shouldn't create two security rules with the same priority a
 
 ![Diagram showing a simplified virtual network with two subnets each with a dedicated virtual machine resource, the first subnet has a network security group and the second subnet doesn't.](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-basic-security-capabilities-azure/media/2-virtual-network.png)
 
-#### Inbound / Outbound Security Rule
+### Inbound / Outbound Security Rule
 
 By default, Azure creates a series of rules, three inbound and three outbound rules, to provide a baseline level of security. You can't remove the default rules, but you can override them by creating new rules with higher priorities.
 
@@ -34,13 +50,17 @@ Each rule specifies one or more of the following properties:
 - **Port range**: You can specify an individual or range of ports. For example, you could specify 80 or 10000-10005. Specifying ranges enables you to create fewer security rules. You can't specify multiple ports or port ranges in the same security rule in NSGs created through the classic deployment model.
 - **Action**: Finally, you need to decide what will happen when this rule is triggered.
 
-### Azure DDoS protection
+### What is the difference between Network Security Groups (NSGs) and Azure Firewall?
+
+Now that you've learned about both Network Security Groups and Azure Firewall, you may be wondering how they differ, as they both protect Virtual Network resources. The Azure Firewall service complements network security group functionality. Together, they provide better "defense-in-depth" network security. Network security groups provide distributed network layer traffic filtering to limit traffic to resources within virtual networks in each subscription. Azure Firewall is a fully stateful, centralized network firewall as-a-service, which provides network and application-level protection across different subscriptions and virtual networks.
+
+## Azure DDoS protection
 
 [Describe Azure DDoS protection - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-basic-security-capabilities-azure/3-describe-azure-ddos-protection)
 
 Any company, large or small, can be the target of a serious network attack. The nature of these attacks might be to make a statement, or simply happen because the attacker wanted a challenge.
 
-#### Distributed Denial of Service attacks
+### Distributed Denial of Service attacks
 
 The aim of a Distributed Denial of Service (DDoS) attack is to overwhelm the resources on your applications and servers, making them unresponsive or slow for genuine users. A DDoS attack will usually target any public-facing endpoint that can be accessed through the internet.
 
@@ -50,7 +70,7 @@ The three most frequent types of DDoS attack are:
 - **Protocol attacks**: Protocol attacks render a target inaccessible by exhausting server resources with false protocol requests that exploit weaknesses in layer 3 (network) and layer 4 (transport) protocols. These types of attacks are typically measured in packets per second.
 - **Resource (application) layer attacks**: These attacks target web application packets, to disrupt the transmission of data between hosts.
 
-#### What is Azure DDoS Protection?
+### What is Azure DDoS Protection?
 
 The Azure DDoS Protection service is designed to help protect your applications and servers by analysing network traffic and discarding anything that looks like a DDoS attack.
 
@@ -67,7 +87,7 @@ Azure DDoS Protection comes in two tiers:
 - **Basic**: The Basic service tier is automatically enabled for every property in Azure, at no extra cost, as part of the Azure platform. Always-on traffic monitoring and real-time mitigation of common network-level attacks provide the same defences that Microsoft’s online services use. Azure’s global network is used to distribute and mitigate attack traffic across regions.
 - **Standard**: The Standard service tier provides extra mitigation capabilities that are tuned specifically to Microsoft Azure Virtual Network resources. DDoS Protection Standard is simple to enable and requires no application changes. Protection policies are tuned through dedicated traffic monitoring and machine learning algorithms. ***Policies are applied to public IP addresses, which are associated with resources deployed in virtual networks, such as Azure Load Balancer and Application Gateway.***
 
-#### Azure DDoS pricing
+### Azure DDoS pricing
 
 The DDoS Standard Protection service has a fixed monthly charge that includes protection for 100 resources. Protection for additional resources are charged on a monthly per-resource basis.
 
@@ -77,7 +97,7 @@ Use Azure DDoS to protect your devices and applications by analysing traffic acr
 
 
 
-### Azure Firewall
+## Azure Firewall
 
 [Describe what is Azure Firewall - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-basic-security-capabilities-azure/4-describe-what-azure-firewall)
 
@@ -87,7 +107,7 @@ Azure Firewall is a managed, cloud-based network security service that protects 
 
 With Azure Firewall, you can scale up the usage to accommodate changing network traffic flows, so you don't need to budget for peak traffic. Network traffic is subjected to the configured firewall rules when you route it to the firewall as the subnet default gateway.
 
-#### Key features of Azure Firewall
+### Key features of Azure Firewall
 
 Azure Firewall comes with many features, including but not limited to:
 
@@ -102,7 +122,7 @@ Use Azure Firewall to help protect the Azure resources you've connected to Azure
 
 
 
-### Azure Bastion
+## Azure Bastion
 
 [Describe what is Azure Bastion - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-basic-security-capabilities-azure/5-describe-what-azure-bastion)
 
@@ -114,7 +134,7 @@ Bastion provides secure RDP and SSH connectivity to all VMs in the virtual netwo
 
 **Azure Bastion deployment is per virtual network, not per subscription/account or virtual machine.** When you provision an Azure Bastion service in your virtual network, the RDP/SSH experience is available to all your VMs in the same virtual network.
 
-#### Key features of Azure Bastion
+### Key features of Azure Bastion
 
 - **RDP and SSH directly in Azure portal**: You get to the RDP and SSH session directly in the Azure portal, using a single-click experience.
 - **Remote session over TLS and firewall traversal for RDP/SSH**: Use an HTML5-based web client that's automatically streamed to your local device. You'll get your Remote Desktop Protocol (RDP) and Secure Shell (SSH) to traverse the corporate firewalls securely.
@@ -125,7 +145,7 @@ Bastion provides secure RDP and SSH connectivity to all VMs in the virtual netwo
 
 
 
-### Web Application Firewall
+## Web Application Firewall
 
 [Describe what is Web Application Firewall - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-basic-security-capabilities-azure/6-describe-what-web-application-firewall)
 
@@ -133,7 +153,7 @@ Web Application Firewall (WAF) provides centralized protection of your web appli
 
 ![Diagram showing how the Web Application Firewall provides protection against common exploits.](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-basic-security-capabilities-azure/media/2-web-app-firewall.png)
 
-#### Supported services
+### Supported services
 
 ***WAF can be deployed with Azure Application Gateway, Azure Front Door, and Azure Content Delivery Network (CDN) services from Microsoft.*** WAF has features that are customized for each specific service.
 
@@ -141,7 +161,7 @@ Use Azure WAF to achieve centralized protection for your web applications from c
 
 
 
-### Describe ways Azure encrypts data
+## Describe ways Azure encrypts data
 
 [Describe ways Azure encrypts data - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-basic-security-capabilities-azure/7-describe-ways-azure-encrypts-data)
 
@@ -151,7 +171,7 @@ Microsoft Azure provides many different ways to secure your data, each depending
 - **Azure Disk Encryption** helps you encrypt Windows and Linux IaaS virtual machine disks. Azure Disk Encryption uses the industry-standard BitLocker feature of Windows and the dm-crypt feature of Linux to provide volume encryption for the OS and data disks.
 - **Transparent data encryption (TDE)** helps protect Azure SQL Database and Azure Data Warehouse against the threat of malicious activity. It performs real-time encryption and decryption of the database, associated backups, and transaction log files at rest without requiring changes to the application.
 
-#### What is Azure Key Vault?
+### What is Azure Key Vault?
 
 Azure Key Vault is a centralized cloud service for storing your application secrets. Key Vault helps you control your applications' secrets by keeping them in a single, central location and by providing secure access, permissions control, and access logging capabilities. It's useful for different kinds of scenarios:
 
@@ -162,11 +182,11 @@ Azure Key Vault is a centralized cloud service for storing your application secr
 
 ------
 
-## Security management capabilities of Azure
+# Security management capabilities of Azure
 
 
 
-### Describe Cloud Security Posture Management (CSPM)
+## Describe Cloud Security Posture Management (CSPM)
 
 [Describe Cloud security posture management - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-security-management-capabilities-of-azure/2-describe-cloud-security-posture-management)
 
