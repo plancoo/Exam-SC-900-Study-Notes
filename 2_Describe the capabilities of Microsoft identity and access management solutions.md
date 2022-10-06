@@ -66,6 +66,8 @@
 
     - A managed identity is automatically managed in Azure AD. Managed identities are typically used to manage the credentials for authenticating a cloud application with an Azure service.
 
+![A](https://learn.microsoft.com/en-au/training/wwl-sci/explore-basic-services-identity-types/media/when-use-managed-identities-expanded.png#lightbox)
+
     - There are two types of managed identities: 
 
       - <u>**system-assigned**</u>
@@ -128,8 +130,14 @@ or
 One of three authentication methods can be used:
 
 - **Password hash synchronization**. The simplest way to enable authentication for on-premises directory objects in Azure AD. Users have the same username and password that they use on-premises without any other infrastructure required.
+
+![A](https://learn.microsoft.com/en-au/training/wwl-sci/explore-basic-services-identity-types/media/password-hash-sync.png)
+
 - **Pass-through authentication (PTA)**. Provides a simple password validation for Azure AD authentication services by using a software agent that runs on one or more on-premises servers. The servers validate the users directly with an on-premises Active Directory, which ensures that the password validation doesn't happen in the cloud.
+- ![A](https://learn.microsoft.com/en-au/training/wwl-sci/explore-basic-services-identity-types/media/pass-through-authentication.png)
+- 
 - **Federated authentication**. Azure AD hands off the authentication process to a separate trusted authentication system, such as on-premises Active Directory Federation Services (AD FS), to validate the user’s password.
+- ![A](https://learn.microsoft.com/en-au/training/wwl-sci/explore-basic-services-identity-types/media/federated-authentication.png)
 
 ## Describe External Identity Types
 
