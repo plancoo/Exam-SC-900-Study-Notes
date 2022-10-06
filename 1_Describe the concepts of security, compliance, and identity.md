@@ -277,10 +277,10 @@ At the receiving end, the message is hashed again, and verified against the digi
 
 Addressing following four pillars is key to a comprehensive and robust identity and access control situation.
 
-1. Administration
-2. Authentication
-3. Authorisation
-4. Auditing
+1. **Administration** Administration is about the creation and management/governance of identities for users, devices, and services. As an administrator, you manage how and under what circumstances the characteristics of identities can change (be created, updated, deleted).
+2. **Authentication**  The authentication pillar tells the story of how much assurance for a particular identity is enough. In other words, how much does an IT system need to know about an identity to have sufficient proof that they really are who they say they are? It involves the act of challenging a party for legitimate credentials. Authentication is sometimes shortened to AuthN.  
+3. **Authorisation** The authorization pillar is about processing the incoming identity data to determine the level of access an authenticated person or service has within the application or service that it wants to access. Authorization is sometimes shortened to AuthZ. 
+4.**Auditing** The auditing pillar is about tracking who does what, when, where, and how. Auditing includes having in-depth reporting, alerts, and governance of identities.
 
 
 ### Common Identity Attacks
