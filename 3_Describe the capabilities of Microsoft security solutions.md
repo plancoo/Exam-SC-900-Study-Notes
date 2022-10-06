@@ -214,208 +214,123 @@ The function of CSPM in your organization might be spread across multiple teams,
 
 Use CSPM to improve your cloud security management by assessing the environment, and automatically alerting security staff for vulnerabilities.
 
-------
+## Describe Microsoft Defender for Cloud
+Microsoft Defender for Cloud is a tool for security posture management and threat protection. It strengthens the security posture of your cloud resources, and with its integrated Microsoft Defender plans, Defender for Cloud protects workloads running in Azure, hybrid, and other cloud platforms.
 
+Microsoft Defender for Cloud fills three vital needs as you manage the security of your resources and workloads in the cloud and on-premises:
 
+   Continuously assess - Know your security posture, identify and track vulnerabilities.
+   Secure - Harden all connected resources and services.
+   Defend - Detect and resolve threats to resources, workloads, and services.
 
-### Describe and explore Azure Security Centre
+The features of Microsoft Defender for Cloud, that deliver on these requirements, cover two broad pillars of cloud security: cloud security posture management and cloud workload protection.
+Cloud security posture management (CSPM)
 
-[Describe and explore the Azure Security center - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-security-management-capabilities-of-azure/3-describe-explore-azure-security-center)
+### In Microsoft Defender for Cloud, the posture management features provide:
 
+   Visibility - to help you understand your current security situation
+   Hardening guidance - to help you efficiently and effectively improve your security
 
-Using Azure Security Centre gives you infrastructure level security management to protect your data. It also provides advanced threat protection for on-premises, cloud, and hybrid workloads in the cloud, whether they're in Azure or not, as well as on-premises.
+#### Visibility and hardening recommendations
 
-Azure Security Centre provides the tools you need to harden your network, secure services, and ensure you're on top of your security posture.
+The central feature in Microsoft Defender for Cloud that enables you to achieve those goals is secure score. Microsoft Defender for Cloud continually assesses your resources, subscriptions, and organization for security issues. It then aggregates all the findings into a single score so that you can tell, at a glance, your current security situation: the higher the score, the lower the identified risk level.
 
-Azure Security Centre addresses the three most urgent security challenges:
+Microsoft Defender for Cloud also provides hardening recommendations based on any identified security misconfigurations and weaknesses. Recommendations are grouped into security controls. Each control is a logical group of related security recommendations, and reflects your vulnerable attack surfaces. Your score only improves when you remediate all of the recommendations for a single resource within a control. Use these security recommendations to strengthen the security posture of your organization's Azure, hybrid, and multi-cloud resources.
 
-- **Rapidly changing workloads**: As organizations empower users to do more, the challenge is to ensure that the ever-changing services people use and create meet your security standards and follow best practices.
-- **Increasingly sophisticated attacks**: Wherever your work is situated, the attacks keep getting more sophisticated. Securing your public internet-facing services is essential; otherwise, you'll be even more vulnerable.
-- **Security skills are in short supply**: The number of security alerts and alerting systems far outnumbers the total of administrators who have the necessary background and experience to ensure your environments are protected.
+![Diagr.](https://learn.microsoft.com/en-us/training/wwl-sci/describe-security-management-capabilities-of-azure/media/3-security-center-recommendations.png)
 
-To help protect against these challenges, Azure Security Centre provides tools to:
 
-#### Strengthen your security posture
+### Cloud workload protection (CWP)
 
-You can improve your security posture using Azure Security Centre to identify and perform hardening tasks across your machines, data services, and applications. With Azure Security Centre, you can manage and enforce security policies to ensure compliance across your virtual machines, non-Azure servers, and Azure PaaS services.
+The second pillar of cloud security is cloud workload protection. Through cloud workload protection capabilities, Microsoft Defender for Cloud is able to detect and resolve threats to resources, workloads, and services. Cloud workload protections are delivered through integrated Microsoft Defender plans, specific to the types of resources in your subscriptions and provide enhanced security features for your workloads. These are described in the next unit.
 
-##### Continuous Assessment
+## Describe the enhanced security of Microsoft Defender for Cloud
 
-Security Centre brings continuous assessment of your entire estate, discovering and reporting whether new and existing resources and assets are configured according to security compliance requirements. You’ll get an ordered list of recommendations of what needs to be fixed to maintain maximum protection. 
+Microsoft Defender for Cloud is offered in two modes:
 
-Security Centre groups the recommendations into security controls and adds a secure score value to each control. This process is crucial in enabling you to prioritize security work.
+   Microsoft Defender for Cloud (Free) - Microsoft Defender for Cloud is enabled for free on all your Azure subscriptions. Using this free mode provides the secure score and its related features: security policy, continuous security assessment, and actionable security recommendations to help you protect your Azure resources.
 
-![Screenshot showing part of Azure Security Center with recommendations as to what needs to be fixed to maintain maximum protection.](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-security-management-capabilities-of-azure/media/3-security-center-recommendations.png)
+   Microsoft Defender for Cloud with enhanced security features - Enabling enhanced security extends the capabilities of the free mode to workloads running in Azure, hybrid, and other cloud platforms, providing unified security management and threat protection across your workloads. Cloud workload protections are delivered through integrated Microsoft Defender plans, specific to the types of resources in your subscriptions and provide enhanced security features for your workloads.
 
-##### Network Map
+### Defender plans
 
-One of the most powerful Security Centre tools for continuously monitoring the security status of your network is the network map. Use the map to look at the topology of your workloads, so you can see if each node is properly configured. You'll see how your nodes are connected, which helps you block unwanted connections that could potentially make it easier for an attacker to creep along your network.
+Microsoft Defender for Cloud includes a range of advanced intelligent protections for your workloads. The workload protections are provided through Microsoft Defender plans specific to the types of resources in your subscriptions. The Microsoft Defender for Cloud plans you can select from are:
 
-![Diagram showing the Security Center network map.](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-security-management-capabilities-of-azure/media/3-network-map.png)
+   **Microsoft Defender for servers** adds threat detection and advanced defenses for your Windows and Linux machines.
+   **Microsoft Defender for App Service** identifies attacks targeting applications running over App Service.
+   **Microsoft Defender for Storage** detects potentially harmful activity on your Azure Storage accounts.
+   **Microsoft Defender for SQL** secures your databases and their data wherever they're located.
+   **Microsoft Defender for Kubernetes** provides cloud-native Kubernetes security environment hardening, workload protection, and run-time protection.
+   **Microsoft Defender for container** registries protects all the Azure Resource Manager based registries in your subscription.
+   **Microsoft Defender for Key Vault** is advanced threat protection for Azure Key Vault.
+  **Microsoft Defender for Resource Manager** automatically monitors the resource management operations in your organization.
+   **Microsoft Defender for DNS** provides an additional layer of protection for resources that use Azure DNS's Azure-provided name resolution capability.
+   **Microsoft Defender for open-source relational protections** brings threat protections for open-source relational databases.
 
-#### Protect against threats
+These different plans can be enabled separately and will run simultaneously to provide a comprehensive defense for compute, data, and service layers in your environment.
 
-With Azure Security Centre's threat protection, you can detect and prevent threats on infrastructure as a service (IaaS), non-Azure servers, and platform as a service (PaaS). It comes with these features:
+### Enhanced security features
 
-- **Integration with Microsoft Defender**: Security Centre natively integrates with Microsoft Defender for Endpoint.
-- **Protect PaaS**: Security Centre helps you detect threats across Azure PaaS services. You can detect threats targeting Azure services, including Azure App Service, Azure SQL, Azure Storage Account, and more data services.
-- **Block brute force attacks**: By reducing access to virtual machine ports, using the just-in-time VM access, you can harden your network by preventing unnecessary access.
-- **Protect data services**: Get assessments for potential vulnerabilities across Azure SQL and Storage services and recommendations for mitigating them.
+Microsoft Defender plans specific to the types of resources in your subscriptions provide enhanced security features for your workloads. Listed below are some of the enhanced security features.
 
-Security Centre's threat protection automatically correlates alerts in your environment based on cyber kill-chain analysis. It helps you to better understand the full story of an attack campaign, where it started and the impact it had on your resources.
+   Comprehensive endpoint detection and response - Microsoft Defender for servers includes Microsoft Defender for Endpoint for comprehensive endpoint detection and response (EDR).
 
-#### Get secure faster
+   Vulnerability scanning for virtual machines, container registries, and SQL resources - Easily deploy a scanner to all of your virtual machines. View, investigate, and remediate the findings directly within Microsoft Defender for Cloud.
 
-With Security Centre, organizations can get secure faster through integration with other Microsoft security solutions. Also, integration with Azure and its resources means you'll pull together a complete security story involving Azure Policy and built-in Security Centre policies across all your Azure resources. You then ensure that the whole thing is automatically applied to newly discovered resources as you create them in Azure.
+   Multi-cloud security - Connect your accounts from Amazon Web Services (AWS) and Google Cloud Platform (GCP) to protect resources and workloads on those platforms with a range of Microsoft Defender for Cloud security features.
 
-------
+   Hybrid security – Get a unified view of security across all of your on-premises and cloud workloads. Apply security policies and continuously assess the security of your hybrid cloud workloads to ensure compliance with security standards. Collect, search, and analyze security data from multiple sources, including firewalls and other partner solutions.
+   
+   Threat protection alerts - Monitor networks, machines, and cloud services for incoming attacks and post-breach activity. Streamline investigation with interactive tools and contextual threat intelligence.
 
+   Track compliance with a range of standards - Microsoft Defender for Cloud continuously assesses your hybrid cloud environment to analyze the risk factors according to the controls and best practices in Azure Security Benchmark. When you enable the enhanced security features, you can apply a range of other industry standards, regulatory standards, and benchmarks according to your organization's needs. Add standards and track your compliance with them from the regulatory compliance dashboard.
 
+   Access and application controls - Block malware and other unwanted applications by applying machine learning powered recommendations adapted to your specific workloads to create allowlists and blocklists. Reduce the network attack surface with just-in-time, controlled access to management ports on Azure VMs. Access and application controls drastically reduce exposure to brute force and other network attacks.
 
+Additional benefits include threat protection for the resources connected to the Azure environment and container security features, among others. Some features may be associated with specific defender plans for specific workloads.
 
-### Describe and explore Azure Secure Score
+## Describe the Azure Security Benchmark and security baselines for Azure 
+New services and features are released daily in Azure, developers are rapidly publishing new cloud applications built on these services, and attackers are always seeking new ways to exploit misconfigured resources.
 
-[Describe and explore Azure Secure score - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-security-management-capabilities-of-azure/4-describe-explore-azure-secure-score)
+The Azure Security Benchmark (ASB) and security baselines for Azure, which are closely related, help organizations secure their cloud solutions on Azure.
 
-Security Center continually assesses your resources, subscriptions, and organization for security issues. It then aggregates all the findings into a single score so you can quickly see your current security situation: the higher the score, the lower the identified risk level.
+### The Azure Security Benchmark
 
-The secure score is shown in the Azure portal pages as a percentage value. The underlying values are also clearly presented:
+Microsoft has found that using security benchmarks can help organizations quickly secure their cloud deployments and reduce risk to their organization.
 
-![Section of the Azure portal showing the Overall Secure Score.](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-security-management-capabilities-of-azure/media/4-overall-secuire-score.png)
+The Azure Security Benchmark (ASB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure. The best way to understand the Azure Security Benchmark is to view it on GitHub Azure Security Benchmark V3. Spoiler alert, it's an excel spreadsheet. Some of the key pieces of information in ASB V3 are:
 
-To increase your security and raise your score, review Security Center's recommendations page for the outstanding actions necessary. Each recommendation includes instructions to help you remediate the specific issue.
+   ASB ID - Each line item in the ASB has an identifier that maps to a specific recommendation.
+    Control domain - ASB control domains include network security, data protection, identity management, privileged access, incident response, endpoint security to name just a few. The control domain is best described as high-level feature or activity that isn't specific to a technology or implementation.
+    Mapping to industry frameworks - The recommendations included in the ASB map to existing industry frameworks, such as the Center for Internet Security (CIS), the National Institute of Standards and Technology (NIST), and the Payment Card Industry Data Security Standards (PCI DSS) frameworks. This makes security and compliance easier for customer applications running on Azure services.
+    Recommendation - For each control domain area there can be many distinct recommendations. Each recommendation captures specific functionality associated with the control domain area and is itself a control. For example, the "Network Security" control domain in ASB v3 has 10 distinct recommendations identified as NS-1 through NS-10. Each of these recommendations describes a specific control under network security.
+    Security principle - Each recommendation lists a "Security Principle" that explains the "what" for the control at the technology-agnostic level
+    Azure Guidance - Azure Guidance is focused on the "how", elaborating on the relevant technical features and ways to implement the controls in Azure.
 
+Other pieces of information in the ASB include links to information on implementation, links to information about security stakeholders, and guidance on mapping to Azure policy. These aren't shown in the image below. The image below is an excerpt from the Azure Security Benchmark (ASB v3) and is shown as an example of the type of the content that is included in the ASB v3. The image is not intended to show the complete text for any of the line items.
 
+![Diagr.](https://learn.microsoft.com/en-us/training/wwl-sci/describe-security-management-capabilities-of-azure/media/azure-security-benchmark-expanded.png#lightbox)
+Microsoft Defender for Cloud continuously assesses an organization's hybrid cloud environment to analyze the risk factors according to the controls and best practices in Azure Security Benchmark. Some of the controls used in the ASB include network security, identity and access control, data protection, data recovery, incident response, and more.
+![Diagr.]()
 
-#### How is the security score calculated?
+## Security baselines for Azure
 
-Every control in the recommendations list shows the potential secure score increase if you address the underlying problem. To get every possible security control point, all your resources must follow each security recommendation within the security control. For example, Security Center has multiple recommendations for how to secure your management ports. You must remediate them all to make a difference to your secure score.
+Security baselines for Azure apply guidance from the Azure Security Benchmark to the specific service for which it's defined. For example, the security baseline for Azure Active Directory applies guidance from the Azure Security Benchmark version 2.0 to Azure Active Directory.
 
-For example, the security control called "Apply system updates" has a maximum score of six points. You can see it in the tooltip on the potential increase value of the control:
+Security baselines for Azure help organizations strengthen their security through improved tooling, tracking, and security features. They also provide organizations a consistent experience when securing their environment. Content in the security baseline is grouped by the control domains defined by the Azure Security Benchmark and that are applicable to the service.
 
-![Fragment of a screenshot showing a specific recommendation control and the percentage point increase will occur from fixing the issues.](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-security-management-capabilities-of-azure/media/4-specific-recommendations.png)
+Each Azure security baseline includes the following information:
 
-The maximum score for this control, *Apply system updates*, is always 6. In this example, there are 50 resources. Divide the maximum score by 50, and the result is that every resource contributes 0.12 points.
+   Azure ID: The Azure Security Benchmark ID that corresponds to the recommendation.
+   Azure control: The content is grouped by control domain area, as listed in the Azure Security Benchmark, and that is applicable to the service for which the security baseline is defined.
+   Benchmark Recommendation: This maps to the recommendation for the associated ASB ID (or Azure ID). Each recommendation describes an individual control in a control domain.
+   Customer Guidance: The rationale for the recommendation and links to guidance on how to implement it.
+   Responsibility: Who is responsible for implementing the control? Possible scenarios are customer responsibility, Microsoft responsibility, or shared responsibility.
+   Microsoft Defender for Cloud monitoring: Does Microsoft Defender for Cloud monitor the control?
 
-- **Potential increase** (0.12 x 8 unhealthy resources = 0.96): The remaining points available to you within the control. If you remediate all the recommendations, your score will increase by 2 percent (in this case, 0.96 points rounded up to 1 point).
-- **Current score** (0.12 x 42 healthy resources = 5.04): The current score for this control. Each control contributes to the total score. In this example, the control is contributing 5.04 points to the current secure total.
-- **Max score**: The maximum number of points you can gain by completing all recommendations within a control. The maximum score for a control indicates its relative significance. *<u>Use the max score values to triage the issues to work on first.</u>*
+The image below is an excerpt from the security baseline for Azure AD and is shown as an example of the type of the content that is included in baseline. The image is not intended to show the complete text for any of the line items.
 
-#### Interactive guide
-
-If you’re the Azure administrator for your organization, you’ll need to be aware of the security of your Azure environment and then improve your security posture. The following interactive click-through demonstrates how you use Azure secure score.  Click on the image below to get started.
-
-[![Interactive guide](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-security-management-capabilities-of-azure/media/4-interactive-guide-place-holder.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security fundamentals/LP03M02 - Use Azure secure score to improve your security posture/index.html)
-
-
-
-------
-
-
-
-### Describe the benefit and use cases of Azure Defender
-
-Previously this was known as, **Cloud Workload Protection Platform (CWPP)**
-
-[Describe the benefit and use cases of Azure Defender - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-security-management-capabilities-of-azure/5-describe-benefit-use-cases-defender)
-
-- Azure Defender is a built-in tool that provides threat protection for workloads running in Azure, on-premises, and other clouds. Azure Defender is the leading Microsoft extended detection and response (XDR) solution for threat protection. 
-- Integrated with Azure Security Center, Azure Defender protects your hybrid data, cloud-native services and servers, and integrates with your existing security workflows.
-- You'll find the Azure Defender dashboard in Azure Security Center. It provides visibility and control of your organization's cloud workload protection (CWP) features across the network.
-
-
-
-##### Scope of Azure Defender
-
-Azure Defender comes with several different plans that can be enabled separately and will run simultaneously to provide a comprehensive defense for compute, data, and service layers in your environment. The Azure Defender plans you can select from are:
-
-- **Azure Defender for servers** adds threat detection and advanced defenses for your Windows and Linux machines.
-- **Azure Defender for App Service** uses the cloud scale to identify attacks targeting applications running over App Service.
-- **Azure Defender for Storage** detects potentially harmful activity on your Azure Storage accounts. Data can be protected, whether stored as blob containers, file shares, or data lakes.
-- **Azure Defender for SQL** extends Azure Security Center's data security package to secure your databases and their data wherever they're located.
-- **Azure Defender for Kubernetes** provides the best cloud-native Kubernetes security environment hardening, workload protection, and run-time protection.
-- **Azure Defender for container registries** protects all the Azure Resource Manager based registries in your subscription. Azure Defender scans all images pushed to the registry, or imported into the registry, or any images pulled within the last 30 days.
-- **Azure Defender for Key Vault** is Azure-native, advanced threat protection for Azure Key Vault, providing an extra layer of security intelligence.
-
-
-
-##### Hybrid cloud protection
-
-You can defend your Azure environment, and add Azure Defender capabilities to the hybrid cloud environment:
-
-- Protect your non-Azure servers.
-- Protect your virtual machines in other clouds (such as AWS and GCP).
-
-
-
-##### Azure Defender alerts
-
-When Azure Defender detects a threat in any area of your environment, it generates an alert. These alerts describe details of the affected resources, suggested remediation steps, and in some cases, an option to trigger a logic app in response. The alerts can also be exported into Azure Sentinel.
-
-
-
-##### Advanced protection
-
-Azure Defender uses advanced analytics for tailored recommendations as they relate to your resources. These analytics might include securing the management ports of your VMs with just-in-time access and adaptive application controls to create allow lists for what apps should and shouldn't run on your machines.
-
-
-
-##### Vulnerability assessment
-
-Azure Defender includes vulnerability scanning for your virtual machines and container registries. Review the findings from these vulnerability scanners and respond to them all from within Security Center.
-
-------
-
-
-
-### Describe security baseline for Azure
-
-Microsoft's cybersecurity group and the Center for Internet Security (CIS), have developed best practices to help establish security baselines for the Azure platform. A baseline is the implementation of the benchmark on the individual Azure service.
-
-CIS benchmarks have been used with Azure security services and tools to make security and compliance easier for customer applications running on Azure services. 
-
-Every service comes with a baseline that's already designed to help provide security for most common-use cases. These baselines also provide a consistent experience when securing your environment.
-
-
-
-#### The Azure Security Benchmark
-
-A benchmark contains security recommendations for a specific technology, such as Azure. The recommendations are categorized by the control to which they belong. The Azure Security Benchmark (ASB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure.
-
-The ASB focuses on cloud-centric control areas. These controls are consistent with well-known security benchmarks, such as those described by the CIS. The areas covered include network security, identity management, posture and vulnerability management, and endpoint security.
-
-Each recommendation includes the following information:
-
-- **Azure ID**: The Azure Security Benchmark ID that corresponds to the recommendation.
-- **Recommendation**: The recommendation provides a high-level description of the control.
-- **Guidance**: The rationale for the recommendation and links to guidance on how to implement it.
-- **Responsibility**: Who is responsible for implementing the control? Possible scenarios are customer responsibility, Microsoft responsibility, or shared responsibility.
-- **Azure Security Center monitoring**: Does Azure Security Center monitor the control?
-
-All recommendations, including the ones that don't apply to this specific service, appear in the baseline to provide a complete picture of how the Azure Security Benchmark relates to each service.
-
-Security baselines are included for many Azure services, including Azure security baseline for Security Center.
-
-------
-
-### Describe the different pricing tiers
-
-Cloud security posture management is essential for every organization. Microsoft Azure lets you decide how much you need to meet your regulatory, compliance, and corporate security needs.
-
-Security Center is offered in two modes:
-
-#### Azure Defender off
-
-Security Center without Azure Defender is enabled free of charge on all your Azure subscriptions when you visit the Azure Security Center dashboard in the Azure portal for the first time, or if enabled programmatically via API.
-
-#### Azure Defender on
-
-Enabling Azure Defender extends the free mode capabilities to workloads running in private and other public clouds, providing unified security management and threat protection across your hybrid cloud workloads.
-
-For more information visit [Azure Defender pricing](https://azure.microsoft.com/pricing/details/azure-defender/).
-
-
-
+![Diagr.](https://learn.microsoft.com/en-us/training/wwl-sci/describe-security-management-capabilities-of-azure/media/azure-ad-security-baseline-expanded.png#lightbox)
 
 
 ## Security capabilities of Azure Sentinel
@@ -520,26 +435,6 @@ Both tools integrate smoothly with Azure Sentinel to provide a complete and thor
 
 #### Azure Sentinel video presentation
 
-In this nine-minute video, you’ll explore many of the key features available in Azure Sentinel, including incidents, workbooks, hunting, notebooks, analytics, and playbooks.
-
-<iframe src="https://www.microsoft.com/en-au/videoplayer/embed/RE4LHLR?postJsllMsg=true&amp;autoCaptions=en-au" frameborder="0" allowfullscreen="true" data-linktype="external" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; outline-color: inherit; width: 640px; position: absolute; inset: 0px; height: 360px;"></iframe>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #### Understand Sentinel costs
@@ -552,9 +447,6 @@ Azure Sentinel provides intelligent security analytics across your enterprise. T
 For more information on pricing and a free trial of Azure Sentinel on an Azure Monitor Log Analytics workspace, visit [Azure Sentinel pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/).
 
 
-
-
-
 ## Protection with Microsoft 365 Defender (Formerly Microsoft Threat Protection)
 
 
@@ -564,27 +456,6 @@ For more information on pricing and a free trial of Azure Sentinel on an Azure M
 [Describe Microsoft 365 Defender services - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-threat-protection-with-microsoft-365-defender/2-describe-services)
 
 Microsoft 365 Defender is an enterprise defense suite that protects against sophisticated cyberattacks. With Microsoft 365 Defender, you can natively coordinate the detection, prevention, investigation, and response to threats across email, identity, and applications.
-
-This short three-minute video provides an essential overview of Microsoft 365 Defender.
-
-<iframe src="https://www.microsoft.com/en-au/videoplayer/embed/RE4IPYr?postJsllMsg=true&amp;autoCaptions=en-au" frameborder="0" allowfullscreen="true" data-linktype="external" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; outline-color: inherit; width: 640px; position: absolute; inset: 0px; height: 360px;"></iframe>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Microsoft 365 Defender allows admins to assess threat signals from applications, email, and identity to determine an attack's scope and impact. It gives greater insight into how the threat occurred, and what systems have been affected. Microsoft 365 Defender can then take automated action to prevent or stop the attack.
@@ -893,9 +764,6 @@ In the example below, the cards are grouped by topic. The first category is **Ri
 Use the **Reports** section to view security trends across your organization, and track the protection of your organization’s devices, apps, identities, and data.
 
 
-
-
-
 ### Describe incident capabilities
 
 [Describe incidents capabilities - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-security-management-capabilities-of-microsoft-365/5-describe-incidents-capabilities)
@@ -913,26 +781,6 @@ You can manage incidents by selecting one from the Incidents queue.
 Incidents are automatically assigned a name based on an alert. You can edit the name of an incident, resolve it, then set its classification and determination. You can also assign the incident to yourself, and add incident tags and comments.
 
 When you investigate cases where you want to move alerts from one incident to another, you can also do so from the Alerts tab. You'll create a larger or smaller incident that includes all relevant alerts.
-
-Watch this four-minute video, which describes incidents and incident management.
-
-<iframe src="https://www.microsoft.com/en-au/videoplayer/embed/RE4J3mt?postJsllMsg=true&amp;autoCaptions=en-au" frameborder="0" allowfullscreen="true" data-linktype="external" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; outline-color: inherit; width: 640px; position: absolute; inset: 0px; height: 360px;"></iframe>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1051,14 +899,3 @@ Role-based access control (RBAC) helps manage who has access to the organization
 To manage tasks in the Endpoint security node of the Microsoft Endpoint Manager admin center, an account must have RBAC permissions equal to the permissions provided by the built-in Intune role of **Endpoint Security Manager**. The Endpoint Security Manager role grants access to the Microsoft Endpoint Manager admin center. This role can be used by individuals who manage security and compliance features, including security baselines, device compliance, conditional access, and Microsoft Defender for Endpoint.
 
 To learn more, go to: [Role-based access control (RBAC) with Microsoft Intune](https://docs.microsoft.com/en-us/mem/intune/fundamentals/role-based-access-control).
-
-#### Video demonstration of Microsoft Endpoint Manager capabilities
-
-In this eight-minute video, you’ll explore Endpoint Manager, and some of its capabilities.
-
-<iframe src="https://www.microsoft.com/en-au/videoplayer/embed/RE4LTIu?postJsllMsg=true&amp;autoCaptions=en-au" frameborder="0" allowfullscreen="true" data-linktype="external" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; outline-color: inherit; width: 640px; position: absolute; inset: 0px; height: 360px;"></iframe>
-
-\
-
-
-
