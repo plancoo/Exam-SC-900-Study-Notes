@@ -657,10 +657,10 @@ The Microsoft 365 Defender portal home page shows many of the common cards that 
 
 The cards fall into these categories:
 
-   -Identities- Monitor the identities in your organization and keep track of suspicious or risky behaviors.                     
-   -Data - Help track user activity that could lead to unauthorized data disclosure.                       
-   -Devices - Get up-to-date information on alerts, breach activity, and other threats on your devices.                  
-   -Apps - Gain insight into how cloud apps are being used in your organization.                           
+   -**Identities**- Monitor the identities in your organization and keep track of suspicious or risky behaviors.                     
+   -**Data** - Help track user activity that could lead to unauthorized data disclosure.                       
+   -**Devices** - Get up-to-date information on alerts, breach activity, and other threats on your devices.                  
+   -**Apps** - Gain insight into how cloud apps are being used in your organization.                           
    
 ![Diander.](https://learn.microsoft.com/en-us/training/wwl-sci/describe-threat-protection-with-microsoft-365-defender/media/2-defender-portal-expanded.png#lightbox)
 
@@ -679,9 +679,9 @@ Microsoft 365 services and apps create alerts when they detect a suspicious or m
 The incidents queue is a central location lists each incident by severity. Selecting an incident name displays a summary of the incident and provides access to tabs with additional information, including:
 
   - All the alerts related to the incident.         
-   -All the users that have been identified to be part of or related to the incident.           
+  -All the users that have been identified to be part of or related to the incident.           
   - All the mailboxes that have been identified to be part of or related to the incident.                           
-   -All the automated investigations triggered by the alerts in the incident.                 
+  -All the automated investigations triggered by the alerts in the incident.                 
   - All the supported evidence and response.    
 
 ![Diagram](https://learn.microsoft.com/en-us/training/wwl-sci/describe-threat-protection-with-microsoft-365-defender/media/incidents-expanded.png)
@@ -698,14 +698,12 @@ Threat analytics is our in-product threat intelligence solution from expert Micr
 Selecting a specific threat from the dashboard provides a threat analytics report that provides more detailed information that includes detailed analyst report, impacted assets, mitigations, and much more.
 
 ![Diagramr.](https://learn.microsoft.com/en-us/training/wwl-sci/describe-threat-protection-with-microsoft-365-defender/media/threat-analytics-expanded.png#lightbox)
-))
 
-
-Secure Score
+### Secure Score
 
 Microsoft Secure Score, one of the tools in the Microsoft 365 Defender portal, is a representation of a company's security posture. The higher the score, the better your protection. From a centralized dashboard in the Microsoft 365 Defender portal, organizations can monitor and work on the security of their Microsoft 365 identities, apps, and devices.
 
-### Secure Score helps organizations:
+ Secure Score helps organizations:
 
    Report on the current state of their security posture.                       
    Improve their security posture by providing discoverability, visibility, guidance, and control.                              
