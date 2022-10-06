@@ -368,27 +368,6 @@ Conditional Access is a feature of Azure AD that provides an extra layer of secu
 
 A Conditional Access policy might state that *if* a user belongs to a certain group, then they're required to provide multifactor authentication to sign in to an application.
 
-Watch the video to see how Conditional Access policies work.
-
-<iframe src="https://www.microsoft.com/en-au/videoplayer/embed/RE4INyI?postJsllMsg=true&amp;autoCaptions=en-au" frameborder="0" allowfullscreen="true" data-linktype="external" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; outline-color: inherit; width: 640px; position: absolute; inset: 0px; height: 360px;"></iframe>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #### Conditional Access signals
 
@@ -418,12 +397,6 @@ When the Conditional Access policy has been applied, an informed decision is rea
 - Control user access based on session controls to enable limited experiences within specific cloud applications. As an example, Conditional Access App Control uses signals from Microsoft Cloud App Security (MCAS) to block, download, cut, copy and print sensitive documents, or to require labeling of sensitive files. Other session controls include sign-in frequency and application enforced restrictions that, for selected applications, use the device information to provide users with a limited or full experience, depending on the device state.
 
 Conditional Access policies can be targeted to members of specific groups or guests. For example, you can create a policy to exclude all guest accounts from accessing sensitive resources. Conditional Access is a feature of paid Azure AD editions.
-
-#### Interactive guide
-
-In this interactive guide, you'll create a Conditional Access policy for a group of users.
-
-[![Interactive guide](https://docs.microsoft.com/en-au/learn/wwl-sci/explore-access-management-capabilities/media/2-interactive.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security fundamentals/LP02M04 - Create a Conditional Access Policy/index.html)
 
 
 
@@ -460,6 +433,34 @@ Managing access using roles is known as role-based access control (RBAC). Azure 
 #### Only grant the access users need
 
 It's best practice, and more secure, to grant users the least privilege to get their work done. It means that if someone mostly manages users, you should assign the user administrator role, and not global administrator. This mitigates the risk of a user account being compromised, and a hacker locking you out of your account. By assigning least privileges, you limit the damage that could be done with a compromised account.
+
+#### Categories of Azure AD roles
+
+As previously defined, Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and access management service. Azure AD is an available service, if you subscribe to any Microsoft Online business offer, such as Microsoft 365 and Azure.
+
+Available Microsoft 365 services include Azure AD, Exchange, SharePoint, Microsoft Defender, Teams, Intune, and many more.
+
+Over time, some Microsoft 365 services, such as Exchange and Intune, have developed their own role-based access control systems, just like the Azure AD service has Azure AD roles to control access to Azure AD resources (Azure AD RBAC). Other services such as Teams and SharePoint don’t have separate role-based access control systems, they use Azure AD roles for their administrative access.
+
+To make it convenient to manage identity across Microsoft 365 services, Azure AD has added some service-specific, built-in roles, each of which grants administrative access to a Microsoft 365 service. This means that Azure AD built-in roles differ in where they can be used. There are three broad categories.
+
+   **Azure AD-specific roles**: These roles grant permissions to manage resources within Azure AD only. For example, User Administrator, Application Administrator, Groups Administrator all grant permissions to manage resources that live in Azure AD.
+
+   **Service-specific roles:** For major Microsoft 365 services, Azure AD includes built-in, service-specific roles that grant permissions to manage features within the service. For example, Azure AD includes built-in roles for Exchange Administrator, Intune Administrator, SharePoint Administrator, and Teams Administrator roles that can manage features with their respective services.
+
+   **Cross-service roles**: There are some roles within Azure AD that span services. For example, Azure AD has security-related roles, like Security Administrator, that grant access across multiple security services within Microsoft 365. Similarly the Compliance Administrator role you can manage Compliance-related settings in Microsoft 365 Compliance Center, Exchange, and so on.
+   
+![C](https://learn.microsoft.com/en-us/training/wwl-sci/explore-access-management-capabilities/media/role-overlap-diagram-v2.png)
+#### Difference between Azure AD RBAC and Azure RBAC
+
+As described above, Azure AD built-in and custom roles are a form of RBAC in that Azure AD roles control access to Azure AD resources. This is referred to as Azure AD RBAC. In the same way that Azure AD roles can control access to Azure AD resources, so too can Azure roles control access to Azure resources. This is referred to as Azure RBAC. Although the concept of RBAC applies to both Azure AD RBAC and Azure RBAC, what they control are different.
+
+   Azure AD RBAC - Azure AD roles control access to Azure AD resources such as users, groups, and applications.
+   Azure RBAC - Azure roles control access to Azure resources such as virtual machines or storage using Azure Resource Management.
+
+There are different data stores where role definitions and role assignments are stored. Similarly, there are different policy decision points where access checks happen.
+
+
 
 
 
