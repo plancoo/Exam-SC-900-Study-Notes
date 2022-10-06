@@ -87,19 +87,22 @@ Assumes everything is on an open untrusted network. This model operates on **Tru
 
 #### Foundational Pillars
 
-These six pillars work together with the Zero Trust model to enforce organisation security policies.
-
-- **Identities**
-- **Devices**
-- **Applications**
-- **Data**
-- **Infrastructure**
-- **Networks**
+In the Zero Trust model, all elements work together to provide end-to-end security. These six elements are the foundational pillars of the Zero Trust model:
+1 - Identities may be users, services, or devices. When an identity attempts to access a resource, it must be verified with strong authentication, and follow least privilege access principles.
+2 - Devices create a large attack surface as data flows from devices to on-premises workloads and the cloud. Monitoring devices for health and compliance is an important aspect of security.
+3 - Applications are the way that data is consumed. This includes discovering all applications being used, sometimes called Shadow IT because not all applications are managed centrally. This pillar also includes managing permissions and access.
+4 - Data should be classified, labeled, and encrypted based on its attributes. Security efforts are ultimately about protecting data, and ensuring it remains safe when it leaves devices, applications, infrastructure, and networks that the organization controls.
+5 - Infrastructure, whether on-premises or cloud based, represents a threat vector. To improve security, you assess for version, configuration, and JIT access, and use telemetry to detect attacks and anomalies. This allows you to automatically block or flag risky behavior and take protective actions.
+6 - Networks should be segmented, including deeper in-network micro segmentation. Also, real-time threat protection, end-to-end encryption, monitoring, and analytics should be employed.
 
 
 #### Confidentiality, Integrity, Availability (CIA)
 
 - All three sides of the CIA model are important and they also represent trade-offs that need to be made.
+
+**Confidentiality** refers to the need to keep confidential sensitive data such as customer information, passwords, or financial data.
+**Integrity** refers to keeping data or messages correct.
+**Availability** refers to making data available to those who need it.
 
 ![Confidentiality, Integrity, Availability (CIA)](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-security-concepts-methodologies/media/4-confidentiality-integrity-availability.png)
 
@@ -121,7 +124,7 @@ Encryption can protect data at rest or in transit.
 
   - Uses public key and private key pair, either key can encrypt data but a single key can't be used to decrypt encrypted data.
   - Usually used for things like Transport Layer Security (TLS), HTTPS protocol and data signing.
-
+![](https://learn.microsoft.com/en-au/training/wwl-sci/describe-security-concepts-methodologies/media/6-encryption.png)
 ### Encryption at rest
 
 - Data at rest is data stored on a physical device like Server(s).
