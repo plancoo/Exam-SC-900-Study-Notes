@@ -299,12 +299,12 @@ Microsoft has found that using security benchmarks can help organizations quickl
 
 The Azure Security Benchmark (ASB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure. The best way to understand the Azure Security Benchmark is to view it on GitHub Azure Security Benchmark V3. Spoiler alert, it's an excel spreadsheet. Some of the key pieces of information in ASB V3 are:
 
-   ASB ID - Each line item in the ASB has an identifier that maps to a specific recommendation.
-    Control domain - ASB control domains include network security, data protection, identity management, privileged access, incident response, endpoint security to name just a few. The control domain is best described as high-level feature or activity that isn't specific to a technology or implementation.
-    Mapping to industry frameworks - The recommendations included in the ASB map to existing industry frameworks, such as the Center for Internet Security (CIS), the National Institute of Standards and Technology (NIST), and the Payment Card Industry Data Security Standards (PCI DSS) frameworks. This makes security and compliance easier for customer applications running on Azure services.
-    Recommendation - For each control domain area there can be many distinct recommendations. Each recommendation captures specific functionality associated with the control domain area and is itself a control. For example, the "Network Security" control domain in ASB v3 has 10 distinct recommendations identified as NS-1 through NS-10. Each of these recommendations describes a specific control under network security.
-    Security principle - Each recommendation lists a "Security Principle" that explains the "what" for the control at the technology-agnostic level
-    Azure Guidance - Azure Guidance is focused on the "how", elaborating on the relevant technical features and ways to implement the controls in Azure.
+   **ASB ID** - Each line item in the ASB has an identifier that maps to a specific recommendation.                     
+    **Control domain** - ASB control domains include network security, data protection, identity management, privileged access, incident response, endpoint security to name just a few. The control domain is best described as high-level feature or activity that isn't specific to a technology or implementation. 
+   ** Mapping to industry frameworks** - The recommendations included in the ASB map to existing industry frameworks, such as the Center for Internet Security (CIS), the National Institute of Standards and Technology (NIST), and the Payment Card Industry Data Security Standards (PCI DSS) frameworks. This makes security and compliance easier for customer applications running on Azure services.                          
+    **Recommendation**- For each control domain area there can be many distinct recommendations. Each recommendation captures specific functionality associated with the control domain area and is itself a control. For example, the "Network Security" control domain in ASB v3 has 10 distinct recommendations identified as NS-1 through NS-10. Each of these recommendations describes a specific control under network security.              
+    **Security principle** - Each recommendation lists a "Security Principle" that explains the "what" for the control at the technology-agnostic level
+    **Azure Guidance** - Azure Guidance is focused on the "how", elaborating on the relevant technical features and ways to implement the controls in Azure.   
 
 Other pieces of information in the ASB include links to information on implementation, links to information about security stakeholders, and guidance on mapping to Azure policy. These aren't shown in the image below. The image below is an excerpt from the Azure Security Benchmark (ASB v3) and is shown as an example of the type of the content that is included in the ASB v3. The image is not intended to show the complete text for any of the line items.
 
@@ -320,11 +320,11 @@ Security baselines for Azure help organizations strengthen their security throug
 
 Each Azure security baseline includes the following information:
 
-  **Azure ID**: The Azure Security Benchmark ID that corresponds to the recommendation.
-  **Azure control**: The content is grouped by control domain area, as listed in the Azure Security Benchmark, and that is applicable to the service for which the security baseline is defined.
-  **Benchmark Recommendation**: This maps to the recommendation for the associated ASB ID (or Azure ID). Each recommendation describes an individual control in a control domain.
-  **Customer Guidance**: The rationale for the recommendation and links to guidance on how to implement it.
-  **Responsibility**: Who is responsible for implementing the control? Possible scenarios are customer responsibility, Microsoft responsibility, or shared responsibility.
+  **Azure ID**: The Azure Security Benchmark ID that corresponds to the recommendation.                                 
+  **Azure control**: The content is grouped by control domain area, as listed in the Azure Security Benchmark, and that is applicable to the service for which the security baseline is defined.                       
+  **Benchmark Recommendation**: This maps to the recommendation for the associated ASB ID (or Azure ID). Each recommendation describes an individual control in a control domain.               
+  **Customer Guidance**: The rationale for the recommendation and links to guidance on how to implement it.                                            
+  **Responsibility**: Who is responsible for implementing the control? Possible scenarios are customer responsibility, Microsoft responsibility, or shared responsibility.                                                                                                                  
   **Microsoft Defender for Cloud monitoring**: Does Microsoft Defender for Cloud monitor the control?
 
 The image below is an excerpt from the security baseline for Azure AD and is shown as an example of the type of the content that is included in baseline. The image is not intended to show the complete text for any of the line items.
