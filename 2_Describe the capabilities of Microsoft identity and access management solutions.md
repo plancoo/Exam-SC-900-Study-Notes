@@ -301,13 +301,6 @@ When a user resets their password using self-service password reset, it can also
 
 To keep users informed about account activity, admins can configure email notifications to be sent when an SSPR event happens. These notifications can cover both regular user accounts and admin accounts. For admin accounts, this notification provides an extra layer of awareness when a privileged administrator account password is reset using SSPR. All global admins would be notified when SSPR is used on an admin account.
 
-#### Interactive guide
-
-In this interactive guide, you'll enable self-service password reset for users in Azure Active Directory.
-
-[![Interactive guide](https://docs.microsoft.com/en-au/learn/wwl-sci/explore-authentication-capabilities/media/5-azure-active-directory-interactive-guide-expanded.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security fundamentals/LP02M03 - Enable SSPR in Azure Active Directory/index.html)
-
-
 
 ### Password Protection and Management Capabilities 
 
@@ -520,27 +513,6 @@ Azure AD Privileged Identity Management (PIM), provides extra controls tailored 
 
 **Entitlement management is an identity governance feature that enables organizations to manage identity and access lifecycle at scale.** Entitlement management automates access request workflows, access assignments, reviews, and expiration.
 
-The following video introduces entitlement management, and looks at how access packages are used for resources.
-
-<iframe src="https://www.microsoft.com/en-au/videoplayer/embed/RE4JXQr?postJsllMsg=true&amp;autoCaptions=en-au" frameborder="0" allowfullscreen="true" data-linktype="external" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; outline-color: inherit; width: 640px; position: absolute; inset: 0px; height: 360px;"></iframe>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ***Entitlement management includes the following capabilities*** to address these challenges:
 
@@ -611,27 +583,6 @@ PIM is:
 - **Auditable, allowing a full access history to be downloaded.**
 
 Privileged Identity Management is a feature of **Azure AD Premium P2.**
-
-<iframe src="https://www.microsoft.com/en-au/videoplayer/embed/RE4ILbu?postJsllMsg=true&amp;autoCaptions=en-au" frameborder="0" allowfullscreen="true" data-linktype="external" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; outline-color: inherit; width: 640px; position: absolute; inset: 0px; height: 360px;"></iframe>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### Azure Identity Protection
