@@ -371,5 +371,5 @@ Authorization is the process of giving someone the ability to access a resource.
   - When the user’s credentials are passed to the website, the website trusts the user and allows access.
 - **With federation, trust isn't always bidirectional. Although IdP-A may trust IdP-B and allow the user in domain B to access the website in domain A, the opposite isn't true, unless that trust relationship is configured.**
 - A common example of federation in practice is when a user logs in to a third-party site with their social media account, such as Twitter. In this scenario, Twitter is an identity provider, and the third-party site might be using a different identity provider, such as Azure AD. There's a trust relationship between Azure AD and Twitter.
-
+ 
 
