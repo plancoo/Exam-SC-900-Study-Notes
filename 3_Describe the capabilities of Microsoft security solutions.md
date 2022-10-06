@@ -256,12 +256,12 @@ Microsoft Defender for Cloud is offered in two modes:
 
 Microsoft Defender for Cloud includes a range of advanced intelligent protections for your workloads. The workload protections are provided through Microsoft Defender plans specific to the types of resources in your subscriptions. The Microsoft Defender for Cloud plans you can select from are:
 
-**Microsoft Defender for servers** adds threat detection and advanced defenses for your Windows and Linux machines.
-**Microsoft Defender for App Service** identifies attacks targeting applications running over App Service.
-**Microsoft Defender for Storage** detects potentially harmful activity on your Azure Storage accounts.
-**Microsoft Defender for SQL** secures your databases and their data wherever they're located.
-**Microsoft Defender for Kubernetes** provides cloud-native Kubernetes security environment hardening, workload protection, and run-time protection.
-**Microsoft Defender for container** registries protects all the Azure Resource Manager based registries in your subscription.
+**Microsoft Defender for servers** adds threat detection and advanced defenses for your Windows and Linux machines.      
+**Microsoft Defender for App Service** identifies attacks targeting applications running over App Service.                     
+**Microsoft Defender for Storage** detects potentially harmful activity on your Azure Storage accounts.                   
+**Microsoft Defender for SQL** secures your databases and their data wherever they're located.                                                             
+**Microsoft Defender for Kubernetes** provides cloud-native Kubernetes security environment hardening, workload protection, and run-time protection.       
+**Microsoft Defender for container** registries protects all the Azure Resource Manager based registries in your subscription.                             
 **Microsoft Defender for Key Vault** is advanced threat protection for Azure Key Vault.
 **Microsoft Defender for Resource Manager** automatically monitors the resource management operations in your organization.
 **Microsoft Defender for DNS** provides an additional layer of protection for resources that use Azure DNS's Azure-provided name resolution capability.
