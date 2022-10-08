@@ -565,13 +565,9 @@ To ensure records management is used correctly across the organization, administ
 
 ### Describe the Insider Risk Management solution
 
-[Describe the insider risk management solution - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-insider-risk-capabilities-microsoft-365/2-management-solution)
+Microsoft Purview Insider Risk Management is a solution that helps minimize internal risks by enabling an organization to detect, investigate, and act on risky and malicious activities. Insider risk management is available in the Microsoft Purview compliance portal.
 
-Insider risk management is a solution in Microsoft 365 that helps minimize internal risks by enabling an organization to detect, investigate, and act on risky and malicious activities. Insider risk management is available in Microsoft 365 compliance center.
-
-Managing and minimizing risk in an organization starts with understanding the types of risks found in the modern workplace. Some risks are driven by external events and factors, and are outside an organization’s direct control. Other risks are driven by internal events and employee activities that can be eliminated and avoided. 
-
-Some examples are risks from illegal, inappropriate, unauthorized, or unethical behavior and actions by employees and managers. These behaviors can lead to a broad range of internal risks from employees:
+Managing and minimizing risk in an organization starts with understanding the types of risks found in the modern workplace. Some risks are driven by external events and factors, and are outside an organization’s direct control. Other risks are driven by internal events and employee activities that can be eliminated and avoided. Some examples are risks from illegal, inappropriate, unauthorized, or unethical behavior and actions by employees and managers. These behaviors can lead to a broad range of internal risks from employees:
 
 - Leaks of sensitive data and data spillage
 - Confidentiality violations
@@ -587,7 +583,7 @@ Insider risk management is centered around the following principles:
 - **Integrated**: Integrated workflow across Microsoft 365 compliance solutions.
 - **Actionable**: Provides insights to enable user notifications, data investigations, and user investigations.
 
-#### Insider risk management workflow
+### Insider risk management workflow
 
 Insider risk management helps organizations to identify, investigate, and address internal risks. With focused policy templates, comprehensive activity signaling across Microsoft 365, and a flexible workflow, organizations can take advantage of actionable insights to help identify and resolve risky behavior quickly. Identifying and resolving internal risk activities and compliance issues with insider risk management in Microsoft 365 is achieved using the following workflow:
 
@@ -628,31 +624,10 @@ Some important compliance areas where communication compliance policies can assi
 - **Risk management** - Communication compliance can help admins scan for unauthorized communication about projects that are considered to be confidential, such as acquisitions, earnings disclosures, and more.
 - **Regulatory compliance** - Most organizations are expected to follow some regulatory compliance standards during their day-to-day operations. For example, a regulation might require organizations to review communications of its brokers to safeguard against potential insider trading, money laundering, or bribery. Communication compliance enables the organization to scan and report on these types of communications in a way that meets their requirements.
 
-Watch the video below for a walkthrough of communication compliance in compliance center:
-
-<iframe src="https://www.microsoft.com/en-au/videoplayer/embed/RE4xlaF?postJsllMsg=true&amp;autoCaptions=en-au" frameborder="0" allowfullscreen="true" data-linktype="external" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; outline-color: inherit; width: 640px; position: absolute; inset: 0px; height: 360px;"></iframe>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Communication compliance is a powerful tool, that can help maintain and safeguard your staff, your data and your organization.
 
-### Descrive information barriers 
+
+## Descrive information barriers 
 
 [Describe information barriers - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-insider-risk-capabilities-microsoft-365/4-describe-information-barriers)
 
@@ -670,7 +645,7 @@ Here are some examples of how information barriers can be applied:
 
 Information barriers are supported in solutions like Microsoft Teams, OneDrive for Business, SharePoint Online, and more.
 
-#### Information barriers in Microsoft Teams
+### Information barriers in Microsoft Teams
 
 In Microsoft Teams, information barrier policies determine and prevent the following kinds of unauthorized communications:
 
@@ -688,289 +663,68 @@ If the people involved are included in an information barrier policy to prevent 
 
 To learn more about the user experience with information barriers, see [information barriers in Microsoft Teams](https://docs.microsoft.com/en-us/MicrosoftTeams/information-barriers-in-teams).
 
-### Describe Privilege Access Management
 
-[Describe privileged access management - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-insider-risk-capabilities-microsoft-365/5-describe-privileged-access-management)
 
-Privileged access management allows granular access control over privileged admin tasks in Microsoft 365. It can help protect organizations from breaches that use existing privileged admin accounts with standing access to sensitive data, or access to critical configuration settings.
 
-Enabling privileged access management in Microsoft 365 allows organizations to operate with **zero standing access**. This means that any user who needs privileged access must request permissions for access, and will receive only the level of access they need just when they need it, and with just-enough access to do the job at hand. Zero standing access provides a layer of protection against standing administrative access vulnerabilities.
 
-Privileged access management requires users to request just-in-time access to complete elevated and privileged tasks through a highly scoped and time-bound approval workflow, described below:
+# Describe e-Discovery capabilities in Microsoft 365
 
-1. **Configure a privileged access policy** - Configuring an approval policy allows the admin to define the specific approval requirements scoped at individual tasks.
-2. **Access request** - Users can request access to elevated or privileged tasks. The privileged access feature sends the request to Microsoft 365 for processing against the configured privilege access policy and records the activity in the Security and Compliance Center logs.
-3. **Access approval** - An approval request is generated, and the pending request notification is emailed to approvers. If approved, the privileged access request is processed as an approval and the task is ready to be completed. If denied, the task is blocked and no access is granted to the requestor. The requestor is notified of the request approval or denial via email message.
-4. **Access processing** - For an approved request, the task is processed. The approval is checked against the privileged access policy and processed by Microsoft. All activity for the task is logged in the Security and Compliance Center.
+## Describe the eDiscovery solutions in Microsoft Purview
 
-Watch this six-minute video to get a tour of privileged access management:
+Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery tools in Microsoft Purview to search for content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Yammer teams. You can search mailboxes and sites in the same eDiscovery search, and then export the search results. You can use eDiscovery cases to identify, hold, and export content found in mailboxes and sites.
 
-<iframe src="https://www.microsoft.com/en-au/videoplayer/embed/RE4xqtC?postJsllMsg=true&amp;autoCaptions=en-au" frameborder="0" allowfullscreen="true" data-linktype="external" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; outline-color: inherit; width: 640px; position: absolute; inset: 0px; height: 360px;"></iframe>
+Microsoft Purview provides three eDiscovery solutions: Content search, eDiscovery (Standard), and eDiscovery (Premium).
+ ![The u](https://learn.microsoft.com/en-us/training/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/media/m365-ediscovery-solution-expanded.png#lightbox) 
+ 
 
+   **Content Search**. Use the Content search tool to search for content across Microsoft 365 data sources and then export the search results to a local computer.  
 
+  **eDiscovery (Standard)**. The eDiscovery (Standard) solution builds on the basic search and export functionality of Content search by enabling you to create eDiscovery cases and assign eDiscovery managers to specific cases. The eDiscovery (Standard) solution also lets you associate searches and exports with a case and lets you place an eDiscovery hold on content locations relevant to the case.   
 
+   **eDiscovery (Premium)**. The eDiscovery (Premium) solution builds on the existing capabilities in eDiscovery (Standard). In addition, eDiscovery (Premium) provides an end-to-end workflow to identify, preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It lets legal teams manage custodians, people that you've identified as people of interest in the case, and the workflow to communicate with custodians. It allows you to collect and copy data into review sets, where you can filter, search, and tag content so you can identify and focus on content that's most relevant. The eDiscovery (Premium) solution provides analytics and machine learning-based predictive coding models to further narrow the scope of your investigation to the most relevant content.   
 
+Subscriptions that support eDiscovery (Standard) also support Content search. Subscriptions that support eDiscovery (Premium) also support Content search and eDiscovery (Standard).
 
+To access any of the eDiscovery-related tools, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Microsoft Purview compliance portal.
 
 
 
+## Describe the audit solutions in Microsoft Purview
+**Note
+Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. Microsoft 365 Audit is now Microsoft Purview Audit (Standard). Microsoft 365 Advanced Audit is now Microsoft Purview Audit (Premium). For more information about Microsoft Purview, see the**
 
+Auditing solutions in Microsoft Purview help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Audit records for these events are searchable by security ops, IT admins, insider risk teams, and compliance and legal investigators in your organization. This capability provides visibility into the activities performed across your Microsoft 365 organization.
 
+Microsoft Purview provides two auditing solutions: Audit (Standard) and Audit (Premium).
 
+ ![The u](https://learn.microsoft.com/en-us/training/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/media/audit-solutions-expanded.png#lightbox)
 
 
+   **Audit (Standard)**. Audit (Standard) provides you the ability to log and search for audited activities and power your forensic, IT, compliance, and legal investigations. Audit (Standard) is turned on by default for all organizations with the appropriate subscription. You can search for a wide-range of audited activities that occur in most of the Microsoft 365 services in your organization. Audit records can also be retrieved using the Office 365 Management Activity API. You can export the audit records returned by the search, to a CSV file, enabling further analysis using Microsoft Excel or Excel Power Query. In Audit (Standard), records are retained for 90 days.   
 
+   **Audit (Premium)**. Audit (Premium) builds on the capabilities of Audit (Standard). Audit (Premium) provides audit log retention policies and longer retention of audit records. It provides audit records for high-value crucial events that can help your organization investigate possible security or compliance breaches and determine the scope of compromise. Audit (Premium) also provides organizations with more bandwidth to access auditing logs through the Office 365 Management Activity API.    
 
+It can take anywhere from 30 minutes to 24 hours after an event occurs for the corresponding audit log record to be returned in the results of an audit log search.
 
+Licensing for Audit (Standard) or Audit (Premium) requires the appropriate organization-level subscription and corresponding per-user licensing. For additional information on licensing requirements, visit the Learn more section in the Summary and resources unit.
 
+Admins and members of investigation teams must be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the Permissions page in the Exchange admin center.
 
 
-**Privileged access management (PAM) sounds a lot like Privileged Identity Management (PIM), so what is the difference?**
 
-Privileged access management is defined and scoped at the task level, while Azure AD Privileged Identity Management applies protection at the role level with the ability to execute multiple tasks. Azure AD Privileged Identity Management primarily allows managing accesses for AD roles and role groups, while privileged access management in Microsoft 365 applies only at the task level.
 
 
 
-### Describe Customer Lockbox
 
-[Describe Customer Lockbox - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-insider-risk-capabilities-microsoft-365/6-describe-customer-lockbox)
 
-Occasionally, an organization might need Microsoft engineers help to help troubleshoot and fix reported issues. Usually, issues are fixed through extensive telemetry and debugging tools Microsoft has in place for its services. However, some cases require a Microsoft engineer to access the organization’s content to determine the root cause and fix the issue.
 
-Customer Lockbox ensures that Microsoft can't access the content to perform a service operation without explicit approval. Customer Lockbox brings the organization into the approval workflow for requests to access their content.
 
-Customer Lockbox supports requests to access data in Exchange Online, OneDrive for Business, and SharePoint Online. Here’s what the process looks like:
 
-[![Simplified Customer Lockbox workflow.](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-insider-risk-capabilities-microsoft-365/media/6-customer-lockbox-workflow-inline.png)](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-insider-risk-capabilities-microsoft-365/media/6-customer-lockbox-workflow-expanded.png#lightbox)
 
-1. Someone at an organization experiences an issue with their Microsoft 365 mailbox, for example. After the user troubleshoots the issue, but can't fix it, they open a support request with Microsoft Support.
-2. A Microsoft support engineer reviews the service request and determines a need to access the organization's tenant to repair the issue in Exchange Online.
-3. The Microsoft support engineer logs into the Customer Lockbox request tool and makes a data access request that includes the organization's tenant name, service request number, and the estimated time the engineer needs access to the data.
-4. After a Microsoft Support manager approves the request, Customer Lockbox sends the designated approver at the organization an email notification about the pending access request from Microsoft.
-5. The approver signs in to the Microsoft 365 admin center and approves the request. This step also triggers the creation of an audit record available by searching the audit log. If the customer rejects the request or doesn't approve the request within 12 hours, the request expires, and no access is granted to the Microsoft engineer.
-6. After the approver from the organization approves the request, the Microsoft engineer receives the approval message, logs into the tenant in Exchange Online, and fixes the customer's issue. Microsoft engineers have the requested duration to fix the issue after which the access is automatically revoked.
 
-Because Customer Lockbox follows a formal approval for access control, a common question is how this capability relates to Privileged Access Management, described in the previous unit, that also requires approval for access control. Customer Lockbox allows a level of access control for organizations *when Microsoft accesses data*. Privileged access management allows granular access control *within an organization* for all Microsoft 365 privileged tasks.
+# Descrive the resource governance capabilities in Azure
 
-
-
-## Describe e-Discovery capabilities in Microsoft 365
-
-### Describe the purpose of eDiscovery
-
-[Describe the purpose of eDiscovery - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/2-describe-purpose-of-ediscovery)
-
-ometimes a company may become involved in litigation and need to find electronic information to be used as evidence.
-
-Electronic discovery or eDiscovery tools, can be used to search for content in Exchange Online mailboxes, Microsoft 365 Groups, Microsoft Teams, SharePoint Online and OneDrive for Business sites, Skype for Business conversations, and Yammer teams. You can search across mailboxes and sites in a single eDiscovery search by using the Content Search tool. And you can use Core eDiscovery cases to identify, hold, and export content found in mailboxes and sites.
-
-If your organization has an Office 365 E5 or Microsoft 365 E5 subscription (or related E5 add-on subscriptions), you can further manage custodians and analyze content by using the Advanced eDiscovery solution in Microsoft 365. Microsoft 365 provides the following eDiscovery tools:
-
-- Content Search
-- Core eDiscovery
-- Advanced eDiscovery
-
-
-
-### Describe the capabilities of the content search tool
-
-[Describe the capabilities of the content search tool - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/3-describe-content-search-tool)
-
-The Content Search eDiscovery tool, accessible from the compliance center in Office 365 or Microsoft 365, enables search for in-place items such as email, documents, and instant messaging conversations in your organization. Search for items is supported in the following services:
-
-- Exchange Online mailboxes and public folders
-- SharePoint Online sites and OneDrive for Business accounts
-- Skype for Business conversations
-- Microsoft Teams
-- Microsoft 365 Groups
-- Yammer Groups
-
-**To have access to the content search page to run searches and preview and export results, an administrator, compliance officer, or eDiscovery manager must be a member of the eDiscovery Manager role group in the Security and Compliance Center.** For more information, visit [Assign eDiscovery permissions](https://docs.microsoft.com/en-us/microsoft-365/compliance/assign-ediscovery-permissions?view=o365-worldwide).
-
-### Run a search
-
-To start using the Content Search tool, you must choose content locations to search and configure a keyword query to find specific items. Or the user can just leave the query blank and return all items in the target locations. Examples of some of the capabilities for running a search include:
-
-- **Build search queries and use conditions** to narrow your search.
-- **Configure search permissions filtering** so that an eDiscovery manager can only search for a subset of mailboxes or sites in your organization.
-- **Run an ID list search** to search for specific mailbox email messages and other mailbox items using a list of Exchange IDs.
-- **Search for Teams chat data** across on-premises users.
-- **View keyword statistics** for the results of a search and then refine the query if necessary.
-- **Search for third-party data** that your organization has imported to Microsoft 365.
-- **Preserve Bcc recipients** to follow regulatory compliance and eDiscovery requirements that may require organizations to preserve mailbox content, including the ability to search for and reproduce details about all recipients of a message, not just those on the "to" and "cc" list.
-
-### Complete actions on content
-
-After you run a search and refine it as necessary, the next step is to do something with the results returned by the search. 
-
-You can export and download the results to your local computer or, if there is an email-based attack, you can delete the results of a search from user mailboxes. You can also use scripts for advanced scenarios. Sometimes you have to do more advanced, complex, and repetitive content search tasks. To help make this easier, Microsoft has created a number of Security and Compliance Center PowerShell scripts to help complete complex content search-related tasks. Some of these scripts include:
-
-- **Search-specific mailbox and site folders** (called a targeted collection) when you're confident that items responsive to a case are located in that folder.
-- **Search the mailbox and OneDrive location** for a list of users.
-- **Create, report on, and delete multiple searches** to quickly and efficiently identify, and cull search data.
-- **Clone a content search** and quickly compare the results of different keyword search queries run on the same content locations; or use the script to save time by not having to reenter a large number of content locations when you create a new search.
-
-Content Search is easy to use, but it's also a powerful tool. To learn more, visit the [content search overview](https://docs.microsoft.com/en-us/microsoft-365/compliance/search-for-content?view=o365-worldwide).
-
-
-
-### Discribe the core eDiscovery workflow
-
-[Describe the core eDiscovery workflow - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/4-describe-core-ediscovery-workflow)
-
-Core eDiscovery in Microsoft 365 provides a basic tool that organizations can use to search and export content in Microsoft 365.
-
-To access Core eDiscovery or be added as a member of a Core eDiscovery case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the **eDiscovery Manager role** group in the Office 365 Security and Compliance Center.
-
-You start by creating an eDiscovery case, which starts from within **Microsoft 365 compliance center**. When you create a case, you must specify a name for it and optionally define a case number. You can assign members to the case. From that point, the case will be displayed in the eDiscovery page and the user can step through the workflow.
-
-The workflow consists of creating holds, searching for content, and exporting and downloading search results.
-
-[![The Core eDiscovery workflow.](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/media/4-core-ediscovery-workflow-inline.png)](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/media/4-core-ediscovery-workflow-expanded.png#lightbox)
-
-### Create an eDiscovery hold
-
-You can use an eDiscovery case to create a hold to preserve content that might be relevant to the case. You can place a hold on the Exchange mailboxes and OneDrive for Business accounts of people you're investigating in the case. You can also place a hold on the mailboxes and sites that are associated with Microsoft Teams, Office 365 Groups, and Yammer Groups. When you place content locations on hold, it's preserved until you remove the hold from the content location, or until you delete the hold.
-
-It may take up to 24 hours after you create the hold for it to take effect.
-
-You have two options to scope the content that's preserved:
-
-- You create an infinite hold where all content in the specified locations is placed on hold. Or you can create a query-based hold where only the content in the specified locations that matches a search query is placed on hold.
-- You can specify a date range to preserve only the content that was sent, received, or created within that date range. Or you can hold all content in specified locations regardless of when it was sent, received, or created.
-
-### Search for content in the case
-
-When you've placed a hold, you can create and run searches for content that relates to the case. You start the search from within the home page for that specific case. Searches associated with a case can only be accessed by members assigned to it.
-
-You can specify keywords, message properties such as sent and received dates, or document properties such as file names, or the date a document was last changed. You can use Boolean operators such as **AND**, **OR**, **NOT**, or **NEAR**. You can also search for sensitive information (for example, social security numbers) in documents, or search for documents that have been shared externally. If you don't specify keywords, all content located in the specified content locations will be included in the search results.
-
-### Export content from a case
-
-You can export search results. Mailbox items are downloaded in a PST file or as individual messages. Content from SharePoint, OneDrive for Business sites, copies of native Office documents, and other documents are exported. A Results.csv file that contains information about every item that's exported and a manifest file (in XML format) that contains information about every search result is also exported.
-
-You can export the results of both a single search or results from multiple searches associated with a case.
-
-### Close, reopen, and delete a core eDiscovery case
-
-Core eDiscovery cases can be closed when the investigations or legal cases they were supporting have been completed. When a case is closed, any holds associated with it will be turned off. Once turned off, there’s a 30-day grace period (referred to as a delay hold) on the content locations that were on hold. This helps ensure that content isn’t deleted immediately and gives admins the chance to look for and restore any content before it's deleted permanently.
-
-The main difference between an active and closed case is that eDiscovery holds are turned off for a closed case. When you reopen a closed case, any holds that were in place when it was closed, won’t be reinstated automatically. After reopening the case, you’ll need to turn on previous holds. A reopened case will have its status changed from closed to active.
-
-You can delete both active and closed cases. If you delete a case, all searches and exports in that case are also deleted, the case is removed from the list in the Microsoft 365 compliance center. The deleted case can’t be reopened.
-
-If the case you want to delete contains eDiscovery holds, you can't delete it. You’ll need to delete all the holds linked to the case then try to delete it again.
-
-### Interactive guide
-
-As the admin for your organization, you've been asked to help with an ongoing investigation. For example, you need to collect information on whether a user has sent emails about the winter project that's currently the subject of the investigation. The following interactive click-through demonstrates how you can do this using the Core eDiscovery workflow.
-
-[![Interactive guide](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/media/4-ediscovery-interactive-guide-expanded.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security fundamentals/LP04M05 - Use eDiscovery to help with investigations/index.html)
-
-### Describe the advanced eDiscovery workflow
-
-[Describe the advanced eDiscovery workflow - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/5-describe-advanced-ediscovery-workflow)
-
-The Advanced eDiscovery solution in Microsoft 365 builds on the existing core eDiscovery. This new solution provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's relevant to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
-
-The built-in workflow of Advanced eDiscovery described below aligns with the Electronic Discovery Reference Model (EDRM), a framework that outlines standards for recovery and discovery of digital data.
-
-[![The Advanced eDiscovery workflow.](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/media/5-advanced-ediscovery-workflow-inline.png)](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/media/5-advanced-ediscovery-workflow-expanded.png#lightbox)
-
-1. **Add custodians to a case**. This is the first step after creating a case. Custodians are people who have administrative control of a document or electronic file that could be relevant to the case.
-2. **Search custodial data sources for data relevant to the case**. After custodians have been added to a case, you can use the built-in search tool to find the custodian locations for data that might be relevant. You do this by using keywords, properties, and conditions to build your search queries, which will return search results that contain data that's likely to be relevant to the case. You can preview search results to quickly verify whether the data is relevant and revise your queries and rerun searches to improve results.
-3. **Add data to a review set**. After configuring and verifying that a search result has provided you with the right data, you’ll need to prepare your results for review and analysis. You can do this by adding the search results to a review set. Doing this means that items are copied from their location of origin to a secure location in Azure Storage. The data is also reindexed to optimize it for review and analysis. You can also add data to conversation review sets, which will provide you with the capabilities to reconstruct conversations, and enable you to review and export conversations like those in Microsoft Teams.
-4. **Review and analyze data in a review set**. When your data is in a review set, you’re ready to view and analyze the case data through a wide variety of capabilities and tools such as filters, queries, and tags. The goal of review and analysis is to reduce the data set to what is the most relevant to the case that's being investigated.
-5. **Export and download case data**. Finally, you can export the data out of Advanced eDiscovery for external review. For example, for an external team of investigators. You export the data out of the review set, and then copy it to a different Azure Storage location. You can then use Azure Storage Explorer to download that data as an export package, to a local device. This export package will contain other components like a summary report, and an error report.
-
-Use Advanced eDiscovery in Microsoft 365 to preserve, collect, review, analyze, and export data that's relevant to your organization's internal and external investigations.
-
-
-
-## Describe the audit capabilities in Microsoft 365
-
-### Describe the core audit capabilities of Microsoft 365
-
-[Describe the core audit capabilities of Microsoft 365 - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-audit-capabilities-microsoft-365/2-describe-core-microsoft-365)
-
-The audit functionality in the Microsoft 365 compliance center allows organizations to view user and administrator activity through a unified audit log. For example, did an administrator reset a password? Did a user change a setting for a team in Microsoft Teams? A unified audit log supports the search of many users and/or admin activities across Microsoft 365 services, Dynamics 365, Microsoft Power Apps, Microsoft Power Automate, Power BI, Azure Active Directory, and more. For a detailed listing, visit [Search the audit log in the compliance center](https://docs.microsoft.com/en-us/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide).
-
-When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for the organization. The length of time that an audit record is kept (and searchable in the audit log) depends on the Office 365 or Microsoft 365 Enterprise subscription, and specifically the type of the license that's assigned to specific users. For core audit capability, the audit record is kept and searchable for 90 days.
-
-Searching the audit log requires the search capability to be turned on, and for the user doing the search to be assigned the appropriate role. The search criteria can be configured based on:
-
-- Activities
-- Start date and end date
-- Users
-- File, folder, or site
-
-The results of the audit log search, which can be filtered and exported to a CSV file, contain the following information about each event returned by the search:
-
-- **Date**: The date and time (in UTC format) when the event occurred.
-- **IP address**: The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address.
-- **User**: The user (or service account) who completed the action that triggered the event.
-- **Activity**: The activity completed by the user. This is based on activities configured.
-- **Item**: The object that was created or modified because of the corresponding activity. For example, the file that was viewed or modified, or the user account that was updated. Not all activities have a value in this column.
-- **Detail**: Additional information about an activity. Again, not all activities have a value.
-
-[![A list of results from an audit search.](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-audit-capabilities-microsoft-365/media/2-audit-search-results-inline.png)](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-audit-capabilities-microsoft-365/media/2-audit-search-results-expanded.png#lightbox)
-
-**It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log record to be returned in the results of an audit log search.**
-
-
-
-### Describe purpose and value of Advanced Auditing
-
-[Describe purpose and value of Advanced Auditing - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-audit-capabilities-microsoft-365/3-describe-purpose-value-advanced-auditing)
-
-Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention that's required to conduct an investigation. Audit log retention provides access to crucial events that help determine the scope of compromise, and faster access to Office 365 Management Activity API.
-
-These capabilities differentiate Advanced Audit from the core audit functionality described in the previous unit and require a Microsoft 365 E5 license, or a Microsoft 365 E3 or Office 365 E3 license with a Microsoft 365 E5 Compliance, or Microsoft 365 E5 eDiscovery and Audit add-on license.
-
-### Long-term retention of audit logs
-
-Advanced Audit keeps all Exchange, SharePoint, and Azure Active Directory audit records for one year. Keeping audit records for longer periods can help with ongoing forensic or compliance investigations. Microsoft now has the capability to keep audit logs for 10 years. The 10-year retention of audit logs helps support long-running investigations and respond to regulatory, legal, and internal obligations.
-
-Note :: ***Retaining audit logs for 10 years requires an additional add-on license.***
-
-### Access to crucial events for investigations
-
-Advanced Auditing helps organizations to conduct forensic and compliance investigations by providing access to crucial events, such as when mail items were accessed, when mail items were replied to and forwarded, and when and what a user searched for in Exchange Online and SharePoint Online. These crucial events can help admins and users investigate possible breaches and determine the scope of compromise. Advanced Auditing provides the following crucial events:
-
-- **MailItemsAccessed** - The MailItemsAccessed event is a mailbox auditing action that's triggered when mail data is accessed by mail protocols and mail clients. The MailItemsAccessed action can help investigators identify data breaches and determine the scope of messages that may have been compromised.
-- **Send** - The Send event is also a mailbox auditing action and is triggered when a user does one of the following actions:
-  - Sends an email message
-  - Replies to an email message
-  - Forwards an email message
-
-Investigators can use the Send event to identify emails sent from a compromised account. The audit record for a Send event contains information about the message. The actual content of the message isn't displayed. However, information such as when the message was sent, the InternetMessage ID, the subject line, and if the message contained attachments, are accessible. This auditing information can help investigators identify information about email messages sent from a compromised account or sent by an attacker.
-
-- **SearchQueryInitiatedExchange** - The SearchQueryInitiatedExchange event is triggered when a person uses the Search bar in Outlook on the web (OWA) to search for items in a mailbox. Investigators can use the SearchQueryInitiatedExchange event to determine if an attacker may have compromised an account, or tried to access sensitive information in the mailbox. The audit record for a SearchQueryInitiatedExchange event contains information such as the actual text of the search query. By looking at the search queries that an attacker may have made, an investigator can better understand the intent of the email data that was searched for.
-- **SearchQueryInitiatedSharePoint** - Similar to searching for mailbox items, the SearchQueryInitiatedSharePoint event is triggered when a person searches for items in the SharePoint home site for your organization. Investigators can use the SearchQueryInitiatedSharePoint event to determine if an attacker tried to find (and possibly accessed) sensitive information in SharePoint. The audit record for a SearchQueryInitiatedSharePoint event also contains the actual text of the search query. By looking at the search queries that an attacker may have performed, an investigator can better understand the intent and scope of the file data being searched for.
-
-### High-bandwidth access to Office 365 Management Activity API
-
-Organizations that access auditing logs through the Office 365 Management Activity API were previously restricted by throttling limits at the publisher level. This means that for a publisher pulling data on behalf of multiple customers, the limit was shared by all those customers.
-
-With the release of Advanced Audit, Microsoft is moving from a publisher-level limit to a tenant-level limit. The result is that each organization will get their own fully allocated bandwidth quota to access their auditing data. The bandwidth isn't a static, predefined limit but is modeled on a combination of factors, including the number of seats in the organization and the type of Microsoft 365 license (organizations with an E5 license will get more bandwidth than non-E5 organizations).
-
-### Interactive guide
-
-Your organization is working with an audit team to find information about activities, such as whether a user sent an email, viewed a document, or whether an admin has had their password reset. To help the audit team, you’ve been asked to verify whether a specific user has sent emails about a particular confidential project. Audit log searches will help you find this kind of information. You do an audit log search:
-
-[![Interactive guide](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-audit-capabilities-microsoft-365/media/3-audit-log-inter-active-guide-expanded.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security fundamentals/LP04M06 - Search the audit log/index.html)
-
-
-
-
-
-
-
-
-
-## Descrive the resource governance capabilities in Azure
-
-### Describe the use of Azure Resource Manager Locks
+## Describe the use of Azure Resource Manager Locks
 
 [Describe the use of Azure Resource Manager locks - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-resource-governance-capabilities-azure/2-describe-use-azure-resource-locks)
 
