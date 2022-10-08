@@ -1,3 +1,114 @@
+# Describe Microsoft’s Service Trust Portal and privacy principles
+
+## Describe Microsoft’s Service Trust Portal
+
+The Microsoft Service Trust Portal provides a variety of content, tools, and other resources about how Microsoft cloud services protect your data, and how you can manage cloud data security and compliance for your organization.
+
+The Service Trust Portal (STP) is Microsoft's public site for publishing audit reports and other compliance-related information associated with Microsoft’s cloud services. STP users can download audit reports produced by external auditors and gain insight from Microsoft-authored whitepapers that provide details on how Microsoft cloud services protect your data, and how you can manage cloud data security and compliance for your organization.
+
+### Accessing the Service Trust Portal
+
+To access some of the resources on the Service Trust Portal, you must log in as an authenticated user with your Microsoft cloud services account (Azure Active Directory organization account) and review and accept the Microsoft non-disclosure agreement for Compliance Materials.
+
+### Service Trust Portal Content Categories
+
+The Service Trust Portal landing page includes content that is organized into the following categories:
+
+    Certifications, Regulations, and Standards
+    Reports, Whitepapers, and Artifacts
+    Industry and Regional Resources
+    Resources for your Organization
+  ![Active](https://learn.microsoft.com/en-us/training/wwl-sci/describe-compliance-management-capabilities-microsoft/media/stp-home-page-v2-expanded.png#lightbox)
+
+### Certifications, Regulations and Standards
+  ![Active](https://learn.microsoft.com/en-us/training/wwl-sci/describe-compliance-management-capabilities-microsoft/media/stp-certifications-standards.png)
+  
+### Reports, Whitepapers, and Artifacts
+  ![Active](https://learn.microsoft.com/en-us/training/wwl-sci/describe-compliance-management-capabilities-microsoft/media/stp-reports.png)
+  
+### Industry and Regional Resources
+  ![Active](https://learn.microsoft.com/en-us/training/wwl-sci/describe-compliance-management-capabilities-microsoft/media/stp-industry-regions.png)
+  
+### Resources for your Organization
+
+This section lists documents applying to your organization (restricted by tenant) based on your organization’s subscription and permissions.
+  ![Active](https://learn.microsoft.com/en-us/training/wwl-sci/describe-compliance-management-capabilities-microsoft/media/stp-reports.png)
+
+## Describe Microsoft's privacy principles
+
+Microsoft’s products and services run on trust. At Microsoft, we value, protect, and defend privacy. We believe in transparency, so that people and organizations can control their data and have meaningful choices in how it's used. We empower and defend the privacy choices of every person who uses our products and services.
+
+Microsoft's approach to privacy is built on the following six principles:
+
+  -  **Control**: Putting you, the customer, in control of your data and your privacy with easy-to-use tools and clear choices. Your data is your business, and you can access, modify, or delete it at any time. Microsoft will not use your data without your agreement, and when we have your agreement, we use your data to provide only the services you have chosen. Your control over your data is reinforced by Microsoft compliance with broadly applicable privacy laws and privacy standards.      
+  -  **Transparency**: Being transparent about data collection and use so that everyone can make informed decisions. We only process your data based on your agreement and in accordance with the strict policies and procedures that we've contractually agreed to. When we deploy subcontractors or subprocessors to perform work that requires access to your data, they can perform only the functions that Microsoft has hired them to provide, and they're bound by the same contractual privacy commitments that Microsoft makes to you. The Microsoft Online Services Subprocessor List identifies authorized, subprocessors, who have been audited against a stringent set of security and privacy requirements in advance. This document is available as one of the data protection resources in the Service Trust Portal.          
+  -  **Security**: Protecting the data that's entrusted to Microsoft by using strong security and encryption. With state-of-the-art encryption, Microsoft protects your data both at rest and in transit. Our encryption protocols erect barriers against unauthorized access to the data, including two or more independent encryption layers to protect against compromises of any one layer. All Microsoft-managed encryption keys are properly secured and offer the use of technologies such as Azure Key Vault to help you control access to passwords, encryption keys, and other secrets.    
+   -  **Strong legal protections**: Respecting local privacy laws and fighting for legal protection of privacy as a fundamental human right. Microsoft defends your data through clearly defined and well-established response policies and processes, strong contractual commitments, and if necessary, the courts. We believe all government requests for your data should be directed to you. We don’t give any government direct or unfettered access to customer data. We will not disclose data to a government or law enforcement agency, except as you direct or where required by law. Microsoft scrutinizes all government demands to ensure they're legally valid and appropriate. If Microsoft receives a request for your data, we'll promptly notify you and provide a copy of the request unless legally prohibited from doing so. Moreover, we'll direct the requesting party to seek the data directly from you. Our contractual commitments to our enterprise and public sector customers include defending your data, which builds on our existing protections. We'll challenge every government request for commercial and public sector customer data where we can lawfully do so.
+   -  **No content-based targeting**: Not using email, chat, files, or other personal content to target advertising. We do not share your data with advertiser-supported services, nor do we mine it for any purposes like marketing research or advertising.
+    Benefits to you: When Microsoft does collect data, it's used to benefit you, the customer, and to make your experiences better. For example:    
+        - Troubleshooting: Troubleshooting for preventing, detecting, and repairing problems affecting operations of services.      
+       -  Feature improvement: Ongoing improvement of features including increasing reliability and protection of services and data.    
+       -  Personalized customer experience: Data is used to provide personalized improvements and better customer experiences.      
+
+These principles form Microsoft’s privacy foundation, and they shape the way that products and services are designed.
+
+
+## Describe Microsoft Priva
+
+Privacy is top of mind for organizations and consumers today, and concerns about how private data is handled are steadily increasing. Regulations and laws impact people around the world, setting rules for how organizations store personal data and giving people rights to manage personal data collected by an organization.
+
+To meet regulatory requirements and build customer trust, organizations need to take a "privacy by default" stance. Rather than manual processes and a patchwork of tools, organizations need a comprehensive solution to address common challenges such as:
+
+ - Helping employees adopt sound data handling practices and training them to spot and fix issues       
+ - Understanding the potential risks in the amount and type of personal data they store and share       
+ - Fulfilling data subject requests, or subject rights requests, efficiently and on-time       
+
+Microsoft Priva helps you meet these challenges so you can achieve your privacy goals. Priva's capabilities are available through two solutions: Priva Privacy Risk Management, which provides visibility into your organization's data and policy templates for reducing risks; and Priva Subject Rights Requests, which provides automation and workflow tools for fulfilling data requests.
+
+### Priva Privacy Risk Management
+
+Microsoft Priva helps you understand the data your organization stores by automating discovery of personal data assets and providing visualizations of essential information. These visualizations can be found on the overview and data profile pages, currently accessible through the Microsoft Purview compliance portal.
+
+The overview dashboard provides an overall view into your organization’s data in Microsoft 365. Privacy administrators can monitor trends and activities, identify and investigate potential risks involving personal data, and springboard into key activities like policy management or subject rights request actions.
+  ![Active](https://learn.microsoft.com/en-us/training/wwl-sci/describe-compliance-management-capabilities-microsoft/media/priva-overview-expanded.png#lightbox)
+
+The data profile page in Priva provides a snapshot view of the personal data your organization stores in Microsoft 365 and where it lives. It also gives insight into the types of data you store.
+  ![Active](https://learn.microsoft.com/en-us/training/wwl-sci/describe-compliance-management-capabilities-microsoft/media/priva-data-profile-expanded.png#lightbox)
+  Priva evaluates your organization's data stored in the following Microsoft 365 services within your Microsoft 365 tenant:
+
+  - Exchange Online    
+  - SharePoint Online    
+   -OneDrive for Business    
+  - Microsoft Teams   
+
+Privacy Risk Management in Microsoft Priva also gives you the capability to set up policies that identify privacy risks in your Microsoft 365 environment and enable easy remediation. Privacy Risk Management policies are meant to be internal guides and can help you:
+
+ -  Detect overexposed personal data so that users can secure it.      
+  - Spot and limit transfers of personal data across departments or regional borders.    
+  - Help users identify and reduce the amount of unused personal data that you store.     
+
+To learn more about Microsoft Priva Privacy Risk Management, select the interactive guide available in the Learn more section of the Summary and resources unit of this module.
+
+### Priva Subject Rights Requests
+
+In accordance with certain privacy regulations around the world, individuals (or data subjects) may make requests to review or manage the personal data about themselves that companies have collected. These requests are sometimes also referred to as data subject requests (DSRs), data subject access requests (DSARs), or consumer rights requests. For companies that store large amounts of information, finding the relevant data can be a formidable task.
+
+Microsoft Priva can help you handle these inquiries through the Subject Rights Requests solution. It provides workflow, automation, and collaboration capabilities for helping you search for subject data, review your findings, collect the appropriate files, and produce reports.
+
+To learn more about Microsoft Priva Privacy Subject Rights Requests, select the interactive guide available in the Learn more section of the Summary and resources unit of this module.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Describe the compliance management capabilities in Microsoft
 
