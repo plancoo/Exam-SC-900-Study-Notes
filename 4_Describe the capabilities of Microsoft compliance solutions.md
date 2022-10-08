@@ -110,94 +110,51 @@ To learn more about Microsoft Priva Privacy Subject Rights Requests, select the 
 
 
 
-## Describe the compliance management capabilities in Microsoft
+#Describe the compliance management capabilities in Microsoft
 
-### Describe common Compliance needs
+## Describe the Microsoft Purview compliance portal
 
-[Describe common compliance needs - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-compliance-management-capabilities-microsoft/2-describe-common-compliance-needs)
+The Microsoft Purview compliance portal brings together all of the tools and data that are needed to help understand and manage an organization’s compliance needs.
 
-Governments are working hard to protect people by creating regulations (laws) that are designed to protect data through several measures including:
-
-- Granting individuals the right to access their data at any time.   
-- Granting individuals the right to correct or delete data about them if needed.
-- Introducing retention periods that dictate a minimum or maximum amount of time data should be stored.
-- Enabling governments and regulatory agencies the right to access and examine data when necessary.
-- Defining rules for what data can be processed and how that should be done.
-
-Some regulations also require that data remains protected even if it’s moved between geographic locations. For example, regulations in some countries require that any personal data transferred outside of their borders meets several conditions including:
-
-- The destination country where personal data is to be transferred must be considered to have adequate protections for the data.
-- Organizations must create appropriate safeguards, such as specific clauses that must be included in contracts with organizations or bodies that handle any personal data.
-
-#### Common compliance regulations
-
-Some of the regulations that organizations and institutions commonly work with include:
-
-- **Health Insurance Portability and Accountability Act (HIPAA)** – introduces rules on how health-related information should be protected.
-- **The Family Educational Rights and Privacy Act (FERPA)** – introduces rules to protect student information.
-- **ISO 27701** – specifies rules and guidance to manage personal information, and demonstrate compliance.
-
-Microsoft supports organizations’ compliance needs with built-in tools and capabilities to help them protect information, manage data governance, and respond to regulatory requests.
-
-
-
-### Describe Compliance Center 
-
-[Describe the Compliance Center - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-compliance-management-capabilities-microsoft/3-describe-compliance-center)
-
-Compliance center is available to customers with a Microsoft 365 SKU with one of the following roles:
+The compliance portal is available to customers with a Microsoft 365 SKU with one of the following roles:
 
 - Global administrator
 - Compliance administrator
 - Compliance data administrator
 
-When an admin signs in to the Microsoft 365 compliance center portal, they’ll get a bird’s-eye view of how the organization is meeting its compliance requirements, along with which solutions can be used to help with compliance, information about any active alerts, and more.
+When an admin signs in to the Microsoft Purview compliance portal, the card section on the home page shows, at a glance, how your organization is doing with data compliance, what solutions are available for your organization, and a summary of any active alerts. Admins can customize the card section by moving cards around or adding/removing cards that are displayed on the home screen.
 
 [![Microsoft Compliance Center dashboard](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/3-compliance-center-dashboard-inline.png)](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/3-compliance-center-dashboard-expanded.png#lightbox)
 
 The default compliance center home page contains several cards including:
-
-- The **compliance score** card. This card shows the compliance score, and will forward admins to the Compliance Manager where they can see a breakdown of the compliance score. Compliance score measures the progress in completing recommended improvement actions within controls. The score helps an organization to understand its current compliance posture. It also helps an organization to prioritize actions based on their potential to reduce risk.
+**
+- The**Compliance Manager** card. This card leads you to the Microsoft Purview Compliance Manager solution. Compliance Manager helps simplify the way you manage compliance. It calculates a risk-based compliance score that measures progress toward completing recommended actions to reduce risks associated with data protection and regulatory standards. The Compliance Manager solution also provides workflow capabilities and built-in control mapping to help you efficiently carry out improvement actions.
 
   [![The compliance score card](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/3-compliance-score-card-inline.png)](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/3-compliance-score-card-expanded.png#lightbox)
 
 - The new **Solution catalog** card, links to collections of [integrated solutions](https://docs.microsoft.com/en-us/microsoft-365/compliance/microsoft-365-solution-catalog) that are used to manage end-to-end compliance scenarios across three compliance solutions areas:
 
-  - The **Information protection & governance** section quickly shows you how to use Microsoft 365 compliance solutions to protect and govern data in your organization.
-  - The **Insider risk management** section on the home page shows how your organization can identify, analyze, and act on internal risks before they cause harm.
-  - The **Discovery & respond section** on the home page shows how your organization can quickly find, investigate, and respond to compliance issues with relevant data.
+    - **Information protection & governanc**. These solutions help organizations classify, protect, and retain your data where it lives and wherever it goes. Included are data lifecycle management, data loss prevention, information protection, and records management.    
+    - **Privacy**. Build a more privacy-resilient workplace. Privacy management gives actionable insights on your organization's personal data to help you spot issues and reduce risks.     
+    - **Insider risk management. These solutions help organizations identify, analyze, and remediate internal risks before they cause harm. Included are communication compliance, information barriers, and insider risk management.     
+    - **Discovery & respond**. These solutions help organizations quickly find, investigate, and respond with relevant data. Included are Audit, data subject requests, and eDiscovery.    
 
-  A solution's capabilities and tools might include a combination of policies, alerts, reports, and more.
-
-  [![Solutions catalog card](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/3-solutions-catalog-card-inline.png)](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/3-solutions-catalog-card-expanded.png#lightbox)
+[![Solutions catalog card](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/3-solutions-catalog-card-inline.png)](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/3-solutions-catalog-card-expanded.png#lightbox)
 
 - The **Active alerts** card includes a summary of the most [active alerts](https://docs.microsoft.com/en-us/microsoft-365/compliance/alert-policies) and a link where admins can view more detailed information, such as alert severity, status, category, and more.
 
   ![Active alerts card](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/3-active-alerts-card.png)
 
-## Navigation
+### Navigation
 
-In addition to the cards on the home page, there’s a navigation pane on the left of the screen that gives easy access to [alerts](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/alerts), [reports](https://docs.microsoft.com/en-us/microsoft-365/compliance/reports-in-security-and-compliance), [policies](https://docs.microsoft.com/en-us/microsoft-365/compliance/alert-policies), compliance solutions, and more. To add or remove options for a customized navigation pane, the **Customize navigation** control on the navigation pane can be used to configure which items appear there.
+In addition to the cards on the home page, there’s a navigation pane on the left of the screen that gives easy access to the Compliance Manager and the Data Classification page where you can get snapshots of how sensitive information and labels are being used across your organization's locations. You can access alerts, reports, policies, and all the solutions that are included in the solutions catalog. There's access to data connectors that you can use to import non-Microsoft data to Microsoft 365 so it can be covered by your compliance solutions. The Customize navigation control allows customization of which items appear in the navigation pane.
 
 [![Compliance Center left navigation pane](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/3-left-navigation-pane-inline.png)](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/3-left-navigation-pane-expanded.png#lightbox)
 
-## Interactive guide
 
-In this interactive guide, you'll explore some of the capabilities of the Microsoft 365 compliance center, your home for managing compliance needs using integrated solutions for information protection, information governance, insider risk management, discovery, and more:
+## Describe Compliance Manager
 
-[![Interactive guide](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/3-compliance-center-interactive-guide-expanded.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security fundamentals/LP04M02 - Explore Compliance Center/index.html)
-
-
-
-### Describe Compliance Manager
-
-[Describe Compliance Manager - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-compliance-management-capabilities-microsoft/4-manager)
-
-Microsoft Compliance Manager is a feature in the Microsoft 365 compliance center that helps admins to manage an organization’s compliance requirements with greater ease and convenience. Compliance Manager can help organizations throughout their compliance journey, from taking inventory of data protection risks, to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
-
-The following video provides a quick overview of Compliance Manager:
-
-<iframe src="https://www.microsoft.com/en-au/videoplayer/embed/RE4FGYZ?postJsllMsg=true&amp;autoCaptions=en-au" frameborder="0" allowfullscreen="true" data-linktype="external" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; outline-color: inherit; width: 640px; position: absolute; inset: 0px; height: 360px;"></iframe>
+Microsoft Purview Compliance Manager is a feature in the Microsoft Purview compliance portal that helps admins to manage an organization’s compliance requirements with greater ease and convenience. Compliance Manager can help organizations throughout their compliance journey, from taking inventory of data protection risks, to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
 
 Compliance Manager helps simplify compliance and reduce risk by providing:
 
@@ -212,7 +169,7 @@ The Compliance Manager dashboard shows the current compliance score, helps admin
 
 Compliance Manager uses several data elements to help manage compliance activities. As admins use Compliance Manager to assign, test, and monitor compliance activities, it’s helpful to have a basic understanding of the key elements: controls, assessments, templates, and improvement actions.
 
-#### Controls
+### Controls
 
 A control is a requirement of a regulation, standard, or policy. It defines how to assess and manage system configuration, organizational process, and people responsible for meeting a specific requirement of a regulation, standard, or policy.
 
@@ -222,7 +179,9 @@ Compliance Manager tracks the following types of controls:
 - **Your controls**: sometimes referred to as customer-managed controls, these are implemented and managed by the organization.
 - **Shared controls**: responsibility for implementing these controls is shared by the organization and Microsoft.
 
-#### Assessments
+Compliance Manager continuously assesses controls by scanning through your Microsoft 365 environment and detecting your system settings, continuously and automatically updating your technical action status.
+
+### Assessments
 
 An assessment is a grouping of controls from a specific regulation, standard, or policy. Completing the actions within an assessment helps to meet the requirements of a standard, regulation, or law. For example, an organization may have an assessment that, when the admin completes all actions within it, it helps to bring the organization’s Microsoft 365 settings in line with ISO 27001 requirements.
 
@@ -234,17 +193,17 @@ Assessments have several components:
 - **Shared controls**: responsibility for implementing these controls is shared by the organization and Microsoft.
 - **Assessment score**: shows the progress in achieving total possible points from actions within the assessment that are managed by the organization and by Microsoft.
 
-When creating assessments, an admin will assign them to a group. The admin can configure groups in whatever way is most logical for the organization. For example, they might group assessments by audit year, region, solution, teams within the organization, or some other way. Once the admin has created groups, the admin can [filter the Compliance Manager dashboard](https://docs.microsoft.com/en-us/microsoft-365/compliance/compliance-manager-setup?view=o365-worldwide#filtering-your-dashboard-view) to view the score by one or more groups.
+An assessment consists of several components including the services that are in-scope, the controls, and an assessment score that shows progress towards completing the actions needed for compliance.
 
-#### Templates
+### Templates
 
 Compliance Manager provides templates to help admins to quickly create assessments. They can modify these templates to create an assessment optimized for their needs. Admins can also build a custom assessment by creating a template with their own controls and actions. For example, the admin may want a template to cover an internal business process control, or a regional data protection standard that isn’t covered by one of Microsoft’s 150-plus prebuilt assessment templates.
 
-#### Improvement actions
+### Improvement actions
 
 Improvement actions help centralize compliance activities. Each improvement action provides recommended guidance that's intended to help organizations to align with data protection regulations and standards. Improvement actions can be assigned to users in the organization to do implementation and testing work. Admins can also store documentation, notes, and record status updates within the improvement action.
 
-#### Benefits of Compliance Manager
+### Benefits of Compliance Manager
 
 Compliance Manager provides many benefits, including:
 
@@ -256,7 +215,7 @@ Compliance Manager provides many benefits, including:
 
 
 
-### Describe use and benifits of Compliance Score
+## Describe use and benifits of Compliance Score
 
 [Describe use and benefits of compliance score - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-compliance-management-capabilities-microsoft/5-describe-use-benefits-of-compliance-score)
 
@@ -266,13 +225,8 @@ Admins can get a breakdown of the compliance score in the Compliance Manager ove
 
 [![A breakdown of compliance score](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/5-compliance-score-home-page-inline.png)](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/5-compliance-score-home-page-expanded.png#lightbox)
 
-#### What is the difference between Compliance Manager and compliance score?
 
-Compliance Manager is an end-to-end solution in Microsoft 365 compliance center to enable admins to manage and track compliance activities. Compliance score is a calculation of the overall compliance posture across the organization. The compliance score is available through Compliance Manager.
-
-Compliance Manager gives admins the capabilities to understand and increase their compliance score, so they can ultimately improve the organization’s compliance posture and help it to stay in line with compliance requirements.
-
-#### How to understand the compliance score
+### How to understand the compliance score
 
 The overall compliance score is calculated using scores that are assigned to actions. Actions come in two types:
 
@@ -290,25 +244,17 @@ The following are subcategories of actions that can be classified as mandatory o
 - **Detective** actions actively monitor systems to identify irregularities that could represent risks, or that can be used to detect breaches or intrusions. Examples of these types of actions are system access audits, or regulatory compliance audits.
 - **Corrective** actions help admins to minimize the adverse effects of security incidents, by undertaking corrective measures to reduce their immediate effect or possibly even reverse damage.
 
-[![How compliance score can be calculated](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/5-compliance-score-calculation-inline.png)](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/5-compliance-score-calculation-expanded.png#lightbox)
-
-Actions that are mandatory and preventative, with 27 points, provide the highest points value towards your compliance score. Organizations accumulate points for every action completed. And the compliance score is shown as a percentage representing all the actions completed, compared with the ones outstanding:
-
+Organizations accumulate points for every action completed. And the compliance score is shown as a percentage representing all the actions completed, compared with the ones outstanding.
 [![Example of a compliance score](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/5-compliance-score-details-inline.png)](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/5-compliance-score-details-expanded.png#lightbox)
 
-## Interactive guide
+### What is the difference between Compliance Manager and compliance score?
 
-In this interactive guide, you’ll explore your organization’s compliance score, and the tools you can use to improve it:
+Compliance Manager is an end-to-end solution in Microsoft 365 compliance center to enable admins to manage and track compliance activities. Compliance score is a calculation of the overall compliance posture across the organization. The compliance score is available through Compliance Manager.
 
-[![Interactive guide](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-compliance-management-capabilities-microsoft/media/5-compliance-score-interactive-guide-expanded.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security fundamentals/LP04M02 - Explore Compliance Score/index.html)
-
-
+Compliance Manager gives admins the capabilities to understand and increase their compliance score, so they can ultimately improve the organization’s compliance posture and help it to stay in line with compliance requirements.
 
 
-
-
-
-## Describe the Information Protection and Governance capabilities of Microsoft 365
+# Describe information protection and data lifecycle management capabilities of Microsoft Purview
 
 ### Know your data, Protect your data and Govern your data
 
