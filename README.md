@@ -18,13 +18,12 @@ This document was created when I was preparing for this exam .
 ```
 **Define identity concepts**
 ```
-• Define identity as the primary security perimeter
-• Define authentication
-• Define authorization
-• Describe identity providers
-• Describe Active Directory
-• Describe the concept of Federation
-· define common Identity Attacks
+•  Define identity as the primary security perimeter
+-  Define authentication
+-  Define authorization
+-  Describe identity providers
+-  Describe Active Directory
+-  Describe the concept of Federation
 ```
 
 ## Describe the capabilities of Microsoft Identity and Access Management Solutions (25·30%)
@@ -33,10 +32,10 @@ This document was created when I was preparing for this exam .
 **Describe the basic identity services and identity types of Azure AD**
 
 ```
-· describe what Azure Active Directory is
-· describe Azure AD identities (users, devices, groups, service principals/applications)
-· describe what hybrid identity is
-· describe the different external identity types (Guest Users)
+·  Describe Azure Active Directory
+-  Describe Azure AD identities
+-  Describe hybrid identity
+-  Describe the different external identity types
 ```
 **Describe the authentication capabilities of Azure AD**
 
