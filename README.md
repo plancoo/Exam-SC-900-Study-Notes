@@ -40,26 +40,25 @@ This document was created when I was preparing for this exam .
 **Describe the authentication capabilities of Azure AD**
 
 ```
-· describe the different authentication methods
-· describe self·service password reset
-· describe password protection and management capabilities
-· describe Multi·factor Authentication
-· describe Windows Hello for Business
+- Describe the authentication methods available in Azure AD
+- Describe Multi-factor Authentication
+- Describe self-service password reset
+- Describe password protection and management capabilities available in Azure AD
 ```
 **Describe access management capabilities of Azure AD**
 
 ```
-· describe what conditional access is
-· describe uses and benefits of conditional access
-· describe the benefits of Azure AD roles
+- Describe conditional access
+- Describe the benefits of Azure AD roles
+- Describe the benefits of Aure AD role-based access control
 ```
 **Describe the identity protection & governance capabilities of Azure AD**
 
 ```
-· describe what identity governance is
-· describe what entitlement management and access reviews is
-· describe the capabilities of PIM
-· describe Azure AD Identity Protection
+- Describe identity governance in Azure AD
+- Describe entitlement management and access reviews
+- Describe the capabilities of Azure AD Privileged Identity Management (PIM)
+- Describe Azure AD Identity Protection
 ```
 
 ## Describe the capabilities of Microsoft Security Solutions  (25–30%)
@@ -79,18 +78,16 @@ This document was created when I was preparing for this exam .
 **Describe security management capabilities of Azure**
 
 ```
-· describe the Azure Security center
-· describe Azure Secure score
-· describe the benefit and use cases of Azure Defender
-· previously the cloud workload protection platform (CWPP)
-· describe Cloud security posture management (CSPM)
-· describe security baselines for Azure
+- Describe Cloud security posture management (CSPM)
+- Describe Microsoft Defender for Cloud
+- Describe the enhanced security features of Microsoft Defender for Cloud
+- Describe security baselines for Azure
 ```
 **Describe security capabilities of Azure Sentinel**
 
 ```
-· define the concepts of SIEM, SOAR, XDR
-· describe the role and value of Azure Sentinel to provide integrated threat protection
+- Define the concepts of SIEM and SOAR
+- Describe how Microsoft Sentinel provides integrated threat management
 ```
 **Describe threat protection with Microsoft 365 Defender (formerly Microsoft Threat
 Protection)**
@@ -107,17 +104,12 @@ Protection)**
 **Describe security management capabilities of Microsoft 365**
 
 ```
-· describe the Microsoft 365 Security Center
-· describe how to use Microsoft Secure Score
-· describe security reports and dashboards
-· describe incidents and incident management capabilities
-```
-**Describe endpoint security with Microsoft Intune**
-
-```
-· describe what Intune is
-· describe endpoint security with Intune
-· describe the endpoint security with the Microsoft Endpoint Manager admin center
+- Describe Microsoft 365 Defender services
+- Describe Microsoft Defender for Identity (formerly Azure ATP)
+- Describe Microsoft Defender for Office 365 (formerly Office 365 ATP)
+- Describe Microsoft Defender for Endpoint (formerly Microsoft Defender ATP)
+- Describe Microsoft Defender for Cloud Apps
+- Describe the Microsoft 365 Defender portal
 ```
 
 ## Describe the Capabilities of Microsoft Compliance Solutions (25·30%)
@@ -129,39 +121,34 @@ Protection)**
 ```
 **Describe the compliance management capabilities of Microsoft Purview**
 ```
-• Describe the Microsoft Purview compliance portal
-• Describe compliance manager
-• Describe the use and benefits of compliance score
-· describe the compliance center
+- Describe the Microsoft Purview compliance portal
+- Describe compliance manager
+- Describe the use and benefits of compliance score
 ```
 
 
 **Describe information protection and data lifecycle management capabilities of
 Microsoft Purview**
 ```
-• Describe data classification capabilities
-• Describe the benefits of content and activity explorer
-• Describe sensitivity labels
-• Describe Data Loss Prevention (DLP)
-• Describe Records Management
-• Describe Retention Polices and Retention Labels
+- Describe data classification capabilities
+- Describe the benefits of content and activity explorer
+- Describe sensitivity labels
+- Describe Data Loss Prevention (DLP)
+- Describe Records Management
+- Describe Retention Polices and Retention Labels
 ```
 
 **Describe insider risk capabilities in Microsoft Purview**
 ```
-• Describe Insider Risk Management
-• Describe communication compliance
-• Describe information barriers
-· describe privileged access management
-· describe customer lockbox
+- Describe Insider Risk Management
+- Describe communication compliance
+- Describe information barriers
 ```
 **Describe resource governance capabilities in Azure**
 ```
-• Describe Azure Policy
-• Describe Azure Blueprints
-• Describe the capabilities in the Microsoft Purview governance portal
-· describe the use of Azure Resource locks
-· describe cloud adoption framework
+•- Describe Azure Policy
+- Describe Azure Blueprints
+- Describe the capabilities in the Microsoft Purview governance portal
 ```
 
 
