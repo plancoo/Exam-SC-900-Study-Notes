@@ -7,7 +7,7 @@
 
 Governments are working hard to protect people by creating regulations (laws) that are designed to protect data through several measures including:
 
-- Granting individuals the right to access their data at any time.
+- Granting individuals the right to access their data at any time.   
 - Granting individuals the right to correct or delete data about them if needed.
 - Introducing retention periods that dictate a minimum or maximum amount of time data should be stored.
 - Enabling governments and regulatory agencies the right to access and examine data when necessary.
