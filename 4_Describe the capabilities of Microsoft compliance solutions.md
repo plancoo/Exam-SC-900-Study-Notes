@@ -713,45 +713,43 @@ Admins and members of investigation teams must be assigned the View-Only Audit L
 
 
 
-
-
-
-
-
-
-
-
-
 # Descrive the resource governance capabilities in Azure
 
-## Describe the use of Azure Resource Manager Locks
+## Describe Azure Policy
 
-[Describe the use of Azure Resource Manager locks - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-resource-governance-capabilities-azure/2-describe-use-azure-resource-locks)
+Azure Policy is designed to help enforce standards and assess compliance across your organization. Through its compliance dashboard, you can access an aggregated view to help evaluate the overall state of the environment. You can drill down to a per-resource, or per-policy level granularity. You can also use capabilities like bulk remediation for existing resources and automatic remediation for new resources, to resolve issues rapidly and effectively. Common use cases for Azure Policy include implementing governance for resource consistency, regulatory compliance, security, cost, and management.
 
-Before we can describe the use of Azure resource locks, it's important to understand what Azure Resource Manager is. Azure Resource Manager is the deployment and management service for Azure. Azure Resources Manager provides a management layer that enables administrators to create, update, and delete resources in an Azure account. Admins can use management features such as resource locks to secure resources after deployment.
+Azure Policy evaluates all resources in Azure and Arc enabled resources (specific resource types hosted outside of Azure).
 
-Resource locks are used to prevent resources from being accidentally deleted or changed. Even with role-based access control policies in place, there's still a risk that people with the correct level of access could delete a critical resource. Azure resource locks prevent users from accidentally deleting or modifying a critical resource, and can be applied to a subscription, a resource group, or a resource.
+Azure Policy evaluates whether the properties of resources match with business rules. These business rules are described using JSON format, and referred to as policy definitions. For simplified management, you can group together multiple business rules to form a single policy initiative. After business rules have been formed, you can assign the policy definition, or policy initiative, to any scope of resources that are supported, such as management groups, subscriptions, resource groups, or individual resources.
 
-For example, there may be times when an administrator needs to lock a subscription, a resources group, or a resource. In these situations, a lock would be applied to prevent users from accidentally deleting or modifying a critical resource.
+### Evaluation outcomes
 
-A lock level can be set to **CanNotDelete** or **ReadOnly**. In the portal, the locks are called **Delete** and **Read-only** respectively.
+Azure Policy evaluates resources at specific times during the resource lifecycle and the policy assignment lifecycle, and for regular ongoing compliance evaluation. The following events or times will trigger an evaluation:
 
-- **CanNotDelete** means authorized users can still read and modify a resource, but they can't delete the resource.
-- **ReadOnly** means authorized users can read a resource, but they can't delete or update the resource. Applying this lock is similar to restricting all authorized users to the permissions granted by the Reader role.
+   - A resource has been created, deleted, or updated in scope with a policy assignment. 
+   - A policy or an initiative is newly assigned to a scope.  
+   - A policy or an initiative that's been assigned to a scope is updated.  
+   - The standard compliance evaluation cycle (happens once every 24 hours).  
 
-A resource can have more than one lock. For example, a resource may have a ReadOnly lock and a CanNotDelete lock. When you apply a lock at a parent scope, all resources within that scope inherit that lock. Even resources you add later inherit the lock from the parent. The most restrictive lock in the inheritance takes precedence.
+Organizations will vary in how they respond to non-compliant resources. Here's some examples:  
 
-Resource Manager locks apply only to operations that happen in the management plane. The locks don't restrict how resources complete their functions. If a lock is applied, changes to the actual resource are restricted, but resource operations aren't restricted. For example, a ReadOnly lock on an Azure SQL Database logical server prevents deletion or modification of the server. However, it doesn't prevent you from creating, updating, or deleting data in the databases on that server.
+   - Deny a change to a resource. 
+   -Log changes to a resource.  
+   - Alter a resource before or after a change.   
+   - Deploy related compliant resources.  
 
-#### Interactive guide
+With Azure Policy, responses like these are made possible by using effects, which are specified in policy definitions.
 
-A development team in your organization uses an Azure Storage account to store some of their content. As the Azure administrator, you’ve been asked to help ensure that the storage account can’t be deleted. In this interactive demonstration, you’ll lock a storage account, verify the lock works, and then remove it.
+### What’s the difference between Azure Policy and Azure role-based access control (RBAC)?
 
-[![Interactive guide](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-resource-governance-capabilities-azure/media/2-resource-locks-interactive-guide-expanded.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security fundamentals/LP04M07 - Use Azure resource lock to lock resources/index.html)
+It’s important not to confuse Azure Policy and Azure RBAC. You use Azure Policy to ensure that the resource state is compliant to your organization’s business rules, no matter who made the change or who has permission to make changes. Azure Policy will evaluate the state of a resource, and act to ensure the resource stays compliant.
 
+Azure RBAC focuses instead on managing user actions at different scopes. Azure RBAC manages who has access to Azure resources, what they can do with those resources, and what areas they can access. If actions need to be controlled, then you would use Azure RBAC. If an individual has access to complete an action, but the result is a non-compliant resource, Azure Policy still blocks the action.
 
+Azure RBAC and Azure Policy should be used together to achieve full scope control in Azure.
 
-### Describe the use of Azure Blueprints
+## Describe the use of Azure Blueprints
 
 [Describe the use of Azure Blueprints - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-resource-governance-capabilities-azure/3-describe-use-azure-blueprints)
 
@@ -770,85 +768,37 @@ With Azure Blueprints, the relationship between the blueprint definition (*what 
 
 Azure Blueprints helps ensure Azure resources are deployed in a way that's in line with compliance requirements. However, a service like Azure Policy should be used to continuously monitor resources and ensure a continuation with compliance requirements.
 
-### Describe the use of Azure Policy
-
-Azure Policy is designed to help enforce standards and assess compliance across your organization. Through its compliance dashboard, you can access an aggregated view to help evaluate the overall state of the environment. You can drill down to a per-resource, or per-policy level granularity. You can also use capabilities like bulk remediation for existing resources and automatic remediation for new resources, to resolve issues rapidly and effectively. Common use cases for Azure Policy include implementing governance for resource consistency, regulatory compliance, security, cost, and management.
-
-Azure Policy evaluates all resources in Azure and Arc enabled resources (specific resource types hosted outside of Azure).
-
-Azure Policy evaluates whether the properties of resources match with business rules. These business rules are described using [JSON](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure) format, and referred to as [policy definitions](https://docs.microsoft.com/en-us/azure/governance/policy/overview#policy-definition). For simplified management, you can group together multiple business rules to form a single [policy initiative](https://docs.microsoft.com/en-us/azure/governance/policy/overview#initiative-definition). After business rules have been formed, you can assign the policy definition, or policy initiative, to any scope of resources that are supported, such as management groups, subscriptions, resource groups, or individual resources.
-
-#### Evaluation outcomes
-
-Azure Policy evaluates resources at specific times during the resource lifecycle and the policy assignment lifecycle, and for regular ongoing compliance evaluation. The following events or times will trigger an evaluation:
-
-- A resource has been created, deleted, or updated in scope with a policy assignment.
-- A policy or an initiative is newly assigned to a scope.
-- A policy or an initiative that's been assigned to a scope is updated.
-- The standard compliance evaluation cycle (happens once every 24 hours).
-
-Organizations will vary in how they respond to non-compliant resources. Here's some examples:
-
-- Deny a change to a resource.
-- Log changes to a resource.
-- Alter a resource before or after a change.
-- Deploy related compliant resources.
-
-With Azure Policy, responses like these are made possible by using [effects](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/effects), which are specified in policy definitions.
-
-#### What’s the difference between Azure Policy and Azure role-based access control (RBAC)?
-
-It’s important not to confuse Azure Policy and Azure RBAC. You use Azure Policy to ensure that the resource state is compliant to your organization’s business rules, no matter who made the change or who has permission to make changes. Azure Policy will evaluate the state of a resource, and act to ensure the resource stays compliant.
-
-Azure RBAC focuses instead on managing user actions at different scopes. Azure RBAC manages who has access to Azure resources, what they can do with those resources, and what areas they can access. If actions need to be controlled, then you would use Azure RBAC. If an individual has access to complete an action, but the result is a non-compliant resource, Azure Policy still blocks the action.
-
-Azure RBAC and Azure Policy should be used together to achieve full scope control in Azure.
 
 
+## Describe the capabilities in the Microsoft Purview governance portal
 
-### Describe Cloud Adpption Framework
+An organization's data is constantly growing and users are storing and sharing data in new directions. For security and compliance administrators, the task of discovering, protecting, and governing sensitive data is one that never ends. The growth of data, also represents challenges for data consumers who might be unaware of a data source. For data producers, those who are responsible for producing and maintaining information assets, creating and maintaining documentation for data sources is complex and time-consuming. Restricting access to data sources and ensuring that data consumers know how to request access is an ongoing challenge.
 
-[Describe the cloud adoption framework - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-resource-governance-capabilities-azure/5-describe-cloud-adoption-framework)
+Microsoft Purview is designed to address the challenges associated with the rapid growth of data and to help enterprises get the most value from their information assets.
 
-Microsoft Cloud Adoption Framework for Azure consists of documentation, implementation guidance, best practices, and tools designed to help businesses to implement strategies necessary to succeed in the cloud. 
+The Microsoft Purview governance portal provides a unified data governance service that helps you manage your on-premises, multi-cloud, and software-as-a-service (SaaS) data. The Microsoft Purview governance portal allows you to:
 
-The Cloud Adoption Framework has been carefully designed based on cloud adoption best practices from Microsoft employees, customers, and partners. It provides a proven and consistent methodology for implementing cloud technologies.
+  -  Create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. 
+  -  Enable data curators to manage and secure your data estate.  
+  - Empower data consumers to find valuable, trustworthy data.   
 
-View this two-minute video to learn more about the cloud adoption lifecycle.
+ ![The u](https://learn.microsoft.com/en-us/training/wwl-sci/describe-resource-governance-capabilities-azure/media/microsoft-purview-v2-expanded.png#lightbox)
 
-<iframe src="https://www.microsoft.com/en-au/videoplayer/embed/RE4tyzr?postJsllMsg=true&amp;autoCaptions=en-au" frameborder="0" allowfullscreen="true" data-linktype="external" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; outline-color: inherit; width: 640px; position: absolute; inset: 0px; height: 360px;"></iframe>
+### Data Map
 
+Microsoft Purview Data Map provides the foundation for data discovery and data governance. By scanning registered data sources, Azure Purview Data Map is able to capture metadata about enterprise data, to identify and classify sensitive data. Microsoft Purview supports Azure data sources and various data source categories including databases, file storage, and applications and services from third parties.
 
+### Data Catalog
 
+With the Microsoft Purview Data Catalog, business and technical users can quickly and easily find relevant data using a search experience with filters based on various lenses like glossary terms, classifications, sensitivity labels and more.
 
+### Data Estate Insights
 
+With the Microsoft Purview Data Estate Insights, data officers and security officers can get a bird’s eye view and at a glance understand what data is actively scanned, where sensitive data is, and how it moves.
 
+### Data Sharing and Data Policy (preview)
 
+Microsoft Purview Data Sharing enables organizations to securely share data both within your organization or cross organizations with business partners and customers.
 
+Access policies in Microsoft Purview enable you to manage access to different data systems across your entire data estate. For example, if a user needs read access to an Azure Storage account that has been registered in Microsoft Purview, you can grant this access directly in Microsoft Purview by creating a data access policy through the Policy management app in the Microsoft Purview governance portal.
 
-
-
-
-
-
-
-
-
-
-
-#### Understand the lifecycle
-
-Each of the following steps is part of the cloud adoption lifecycle.
-
-[![The Cloud Adoption Lifecycle diagram.](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-resource-governance-capabilities-azure/media/5-cloud-adoption-lifecycle-inline.png)](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-resource-governance-capabilities-azure/media/5-cloud-adoption-lifecycle-expanded.png#lightbox)
-
-1. **Strategy**: define business justification and expected outcomes of adoption.
-2. **Plan**: align actionable adoption plans to business outcomes.
-3. **Ready**: Prepare the cloud environment for the planned changes.
-4. Adopt
-   - **Migrate**: Migrate and modernize existing workloads.
-   - **Innovate**: Develop new cloud-native or hybrid solutions.
-5. **Govern**: Govern the environment and workloads.
-6. **Manage**: Operations management for cloud and hybrid solutions.
-
-When your enterprise's digital transformation involves the cloud, understanding these fundamental concepts will help you during each step of the process.
