@@ -98,20 +98,6 @@ Microsoft Priva can help you handle these inquiries through the Subject Rights R
 To learn more about Microsoft Priva Privacy Subject Rights Requests, select the interactive guide available in the Learn more section of the Summary and resources unit of this module.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-#Describe the compliance management capabilities in Microsoft
-
 ## Describe the Microsoft Purview compliance portal
 
 The Microsoft Purview compliance portal brings together all of the tools and data that are needed to help understand and manage an organization’s compliance needs.
@@ -254,15 +240,17 @@ Compliance Manager is an end-to-end solution in Microsoft 365 compliance center 
 Compliance Manager gives admins the capabilities to understand and increase their compliance score, so they can ultimately improve the organization’s compliance posture and help it to stay in line with compliance requirements.
 
 
+
+
 # Describe information protection and data lifecycle management capabilities of Microsoft Purview
 
-### Know your data, Protect your data and Govern your data
+## Know your data, Protect your data and Govern your data
 
-[Know your data, protect your data, and govern your data - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-information-protection-governance-capabilities-microsoft-365/2-know-your-data-protect-your-data-govern-your-data)
+Microsoft Purview Information Protection discovers, classifies, and protects sensitive and business-critical content throughout its lifecycle across your organization. It provides the tools to know your data, protect your data, and prevent data loss.
 
-Microsoft Information Protection (MIP) discovers, classifies, and protects sensitive and business-critical content throughout its lifecycle across your organization. It provides the tools to know your data, protect your data, and prevent data loss.
+Microsoft Purview Data Lifecycle Management manages your content lifecycle using solutions to import, store, and classify business-critical data so you can keep what you need and delete what you don't. It gives organizations the capabilities to govern their data, for compliance or regulatory requirements.
 
-Microsoft Information Governance (MIG) manages your content lifecycle using solutions to import, store, and classify business-critical data so you can keep what you need and delete what you don't. It gives organizations the capabilities to govern their data, for compliance or regulatory requirements. Microsoft Information Protection and Microsoft Information Governance work together to classify, protect, and keep your data where it lives, and wherever it goes.
+Information protection and data lifecycle management work together to classify, protect, and govern your data where it lives, and wherever it goes.
 
 [![The concept of know your data, protect your data, prevent data loss, and govern your data, represented by four circles.](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-information-protection-governance-capabilities-microsoft-365/media/2-know-govern-your-data-inline.png)](https://docs.microsoft.com/en-au/learn/wwl-sci/describe-information-protection-governance-capabilities-microsoft-365/media/2-know-govern-your-data-expanded.png#lightbox)
 
@@ -274,25 +262,18 @@ Microsoft Information Governance (MIG) manages your content lifecycle using solu
 
 
 
+## Describe the data classification capabilities of the compliance portal 
+
+Organizations need to know their data to identify important information across the estate and ensure that data is handled in line with compliance requirements. Admins can enable their organization to know its data through data classification capabilities and tools in the Microsoft Purview compliance portal, such as sensitive information types, trainable classifiers, content explorer, and activity explorer.
+
+Identifying and classifying sensitive items that are under your organization's control is the first step in the Information Protection discipline. Microsoft Purview provides three ways of identifying items so that they can be classified:
+
+ - manually by users 
+ - automated pattern recognition, like sensitive information types  
+ - machine learning  
 
 
-
-### Describe Data Classification capabilities in the Microsoft 365 Compliance Center 
-
-[Describe data classification capabilities in the Microsoft 365 Compliance Center - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-information-protection-governance-capabilities-microsoft-365/3-describe-data-classification-capabilities-compliance-center)
-
-Organizations need to know their data to identify important information across the estate and ensure that data is handled in line with compliance requirements. 
-
-Admins can enable their organization to know its data through data classification capabilities and tools in the Microsoft 365 compliance center, such as,
-
-- sensitive information types
-- trainable classifiers
-- content explorer
-- activity explorer
-
-
-
-#### Sensitive information types
+### Sensitive information types
 
 With Microsoft 365 compliance center, **admins can identify and protect sensitive information types. Sensitive information types have set patterns that can be used to identify them.** For example, an identification number in a region/country may be based on a specific pattern, like this:
 
@@ -311,7 +292,7 @@ Refer to [Sensitive information type entity definitions](https://docs.microsoft.
 
 Data classification in Microsoft 365 also supports the ability to create custom sensitive information types to address organization-specific requirements. For example, an organization may need to create sensitive information types to represent employee IDs or project numbers.
 
-#### Trainable classifiers
+### Trainable classifiers
 
 Trainable classifiers use artificial intelligence and machine learning to intelligently classify your data. They're most useful classifying data unique to an organization like specific kinds of contracts, invoices, or customer records. This method of classification is more about training a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching). Two types of classifier are available:
 
@@ -326,7 +307,8 @@ After the accuracy score of the model has stabilized, the classifier can be publ
 
 Note :: ***At this time, classifiers only work with items that are in English and aren't encrypted.***
 
-#### Understand and explore the data
+
+### Understand and explore the data
 
 Data classification can involve large numbers of documents and emails. To help administrators to easily derive insights and understanding, the overview section of the data classification pane in compliance center provides many details at a glance, including:
 
@@ -336,7 +318,7 @@ Data classification can involve large numbers of documents and emails. To help a
 
 Administrators can also use the content and activity explorers to gain a deeper understanding and guide their actions.
 
-#### What is the content explorer?
+### What is the content explorer?
 
 The content explorer is available as a tab in the data classification pane of compliance center. It enables administrators to gain visibility into the content that has been summarized in the overview pane. Access to content explorer is highly restricted because it makes it possible to read the contents of scanned files. There are two roles that grant access to content explorer:
 
@@ -347,7 +329,7 @@ Anyone who wants to access content explorer must have an account in one or both 
 
 With content explorer, administrators get a current snapshot of individual items that have been classified across the organization. It enables administrators to further drill down into items by allowing them to access and review the scanned source content that's stored in different kinds of locations, such as Exchange, SharePoint, and OneDrive.
 
-#### What is the activity explorer?
+### What is the activity explorer?
 
 **Activity explorer** provides visibility into what content has been discovered and labeled, and where that content is. It makes it possible to monitor what's being done with labeled content across the organization. Admins gain visibility into document-level activities like label changes and label downgrades (such as when someone changes a label from confidential to public).
 
@@ -371,39 +353,17 @@ Admins can use more than 30 filters for data including:
 
 The value of understanding what actions are being taken with sensitive content is that admins can see if the controls that they've already put in place, such as [data loss prevention policies](https://docs.microsoft.com/en-us/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide), are effective or not. For example, if it’s discovered that a large number of items labeled *Highly Confidential* have suddenly been downgraded to *Public*, admins can update policies and act to restrict undesired behavior as a response.
 
-#### Explore data classification in the compliance center
-
-The video below walks you through the various data classification capabilities available in the compliance center.
-
-<iframe src="https://www.microsoft.com/en-au/videoplayer/embed/RE4vx8x?postJsllMsg=true&amp;autoCaptions=en-au" frameborder="0" allowfullscreen="true" data-linktype="external" style="box-sizing: inherit; margin: 0px; padding: 0px; border: 0px; outline-color: inherit; width: 640px; position: absolute; inset: 0px; height: 360px;"></iframe>
+### Explore data classification in the compliance center
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Describe sensitivity labels and policies
+## Describe sensitivity labels and policies
 
 [Describe sensitivity labels and policies - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-information-protection-governance-capabilities-microsoft-365/4-describe-sensitivity-labels-policies)
 
 Organizations must protect their data, to safeguard customers and business operations, and to meet compliance standards. Admins can enable their organization to protect its data, through capabilities and tools such as sensitivity labels and policies in Microsoft 365 compliance center.
 
-#### Sensitivity labels
+### Sensitivity labels
 
 Sensitivity labels, available as part of information protection in the Microsoft 365 compliance center, enable the labeling and protection of content, without affecting productivity and collaboration. With sensitivity labels, organizations can decide on labels to apply to content such as emails and documents, much like different stamps are applied to physical documents:
 
@@ -427,7 +387,7 @@ Sensitivity labels can be used to:
 - **Extend sensitivity labels to third-party apps and services**. Using the Microsoft Information Protection SDK, third-party apps can read sensitivity labels and apply protection settings.
 - **Classify content without using any protection settings**. A classification can be assigned to content (just like a sticker) that persists and roams with the content as it's used and shared. The classification can be used to generate usage reports and view activity data for sensitive content.
 
-#### Label policies
+### Label policies
 
 After sensitivity labels are created, they need to be published to make them available to people and services in the organization. Sensitivity labels are published to users or groups through label policies. Sensitivity labels will then appear in Office apps for those users and groups. The sensitivity labels can be applied to documents and emails. Label policies enable admins to:
 
@@ -448,11 +408,7 @@ Admins can also enable users to label and protect their files using the Windows 
 
 
 
-
-
 ### Describe Data Loss Prevention (DLP)
-
-[Describe data loss prevention - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-information-protection-governance-capabilities-microsoft-365/5-describe-data-loss-prevention)
 
 Data loss can harm an organization’s customers, business processes, and the organization itself. Organizations need to prevent data loss by detecting risky behavior and preventing sensitive information from being shared inappropriately. Admins can use data loss prevention policies, available in Microsoft 365 compliance center, to help their organization.
 
@@ -485,7 +441,7 @@ A policy can contain one or more rules, and each rule consists of conditions and
 
 The rules inside the policy are prioritized in how they’re implemented. For example, in the above diagram, rule one will be prioritized before rule two, and so on.
 
-#### What is endpoint data loss prevention?
+### What is endpoint data loss prevention?
 
 Endpoint data loss prevention is how the protection and activity monitoring capabilities of DLP for sensitive content can be extended to Windows 10 devices. Admins can choose to target Windows 10 when creating a DLP policy (after onboarding the devices to Microsoft 365 compliance solutions). Endpoint DLP enables admins to audit and manage activities that users complete on sensitive content, including:
 
@@ -502,7 +458,7 @@ In the activity explorer, you can view information about what users are doing wi
 
 Admins use this information to enforce protective actions for content through controls and policies.
 
-#### Data loss prevention in Microsoft Teams
+### Data loss prevention in Microsoft Teams
 
 Data loss prevention capabilities have been extended to Microsoft Teams chat and channel messages, including messages in private channels. With DLP, administrators can now define policies that prevent users from sharing sensitive information in a Teams chat session or channel, whether it's in a message, or a file. Just like with Exchange, Outlook, SharePoint, and OneDrive for Business, administrators can use DLP policy tips that will be displayed to the user to show them why a policy has been triggered. For example, the screenshot below shows a policy tip on a chat message that was blocked because the user attempted to share a U.S. Social Security Number:
 
@@ -517,8 +473,7 @@ With DLP policies, Microsoft Teams can help users across organizations to collab
 
 
 
-
-### Describe Retention Policies and Retention Labels 
+## Describe Retention Policies and Retention Labels 
 
 [Describe retention polices and retention labels - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-information-protection-governance-capabilities-microsoft-365/6-describe-retention-polices-retention-labels)
 
@@ -559,7 +514,7 @@ When using retention policies and retention labels to assign retention settings 
 
 
 
-### Describe Record management
+## Describe Record management
 
 [Describe records management - Learn | Microsoft Docs](https://docs.microsoft.com/en-au/learn/modules/describe-information-protection-governance-capabilities-microsoft-365/7-describe-records-management)
 
@@ -593,7 +548,7 @@ For more information on comparing, use the [Compare restrictions for what action
 
 The most important difference is that if content has been marked as a regulatory record, nobody, not even a global administrator, can remove the label. Marking an item as a regulatory record can have irreversible consequences, and should only be used when necessary. As a result, this option isn’t available by default, and has to be enabled by the administrator using PowerShell.
 
-#### Common use cases for records management
+### Common use cases for records management
 
 Microsoft 365’s records management capabilities are flexible. There are different ways in which records management can be used across an organization, including:
 
@@ -606,7 +561,7 @@ To ensure records management is used correctly across the organization, administ
 
 
 
-## Describe Insider risk capabilities of Microsoft 365
+# Describe Insider risk capabilities of Microsoft 365
 
 ### Describe the Insider Risk Management solution
 
