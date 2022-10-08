@@ -260,7 +260,7 @@ Information protection and data lifecycle management work together to classify, 
 - **Govern your data**: Organizations can automatically keep, delete, and store data and records in a compliant manner. Capabilities like retention policies, retention labels, and records management enable organizations to govern their data.
 
 
-
+# Describe the compliance management capabilities of Microsoft Purview 365
 
 ## Describe the data classification capabilities of the compliance portal 
 
